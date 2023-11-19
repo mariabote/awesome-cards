@@ -1,5 +1,11 @@
 // fonts
+$open_font: "Open Sans", sans-serif;
+$merry_font: "Merriweather", serif;
+$montse_font: "Montserrat", sans-serif;
 
+$principal_font: $open_font;
+$title_font: $merry_font;
+$card_font: $montse_font;
 // font-sizes
 
 // line-heights
@@ -7,3 +13,25 @@
 // spaces (margins, paddings)
 
 // colors
+$black-20: rgba(0, 0, 0, 0.2);
+$light-khaki: #8d8c89;
+$tomato: #e95626;
+$dried-blood: #420101;
+$rusty-red: #bd1010;
+$faded-orange: #eab052;
+$light-grey-blue: #a0c0cf;
+$azure: #00a0f5;
+$white: #d5d5d5;
+$white-two: #fff;
+$white-three: #d8d8d8;
+$black: #000;
+$gunmetal: #54585a;
+$brownish-grey: #6b6b6b;
+$slate: #3e5b65;
+$hospital-green: #a2deaf;
+$silver: #bfcdd0;
+$pale-grey: #dde9ed;
+$dark-green-blue: #114e4e;
+$dirty-blue: #438792;
+$pinkish-grey: #c5c5c5;
+$white-four: #f5f5f5;
