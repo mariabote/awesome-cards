@@ -1,0 +1,19 @@
+.first-main {
+  &-title {
+    width: 22.3rem;
+    height: 2.4rem;
+    font-family: $merry_font;
+    font-size: 1.92rem;
+    font-weight: 900;
+    color: $dull_orange;
+    margin: auto;
+  }
+  &-text {
+    width: 26.48rem;
+    height: 3.84rem;
+    font-size: 1.28rem;
+    margin: auto;
+    color: $dark_green_blue;
+    text-align: center;
+  }
+}
