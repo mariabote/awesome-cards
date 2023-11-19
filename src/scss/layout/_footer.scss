@@ -2,64 +2,48 @@
 
   display: grid;
   width: 100vw;
-  height: 110px;
-  background-color: #ffffff;
-  border-top: solid 1px #d8d8d8;
+  height: 11rem;
+  background-color: $white_two;
+  border-top: solid 0.1rem $white_three;
 
   &__text {
-    margin: 18px 61px 12px 61px;
-    width: 198px;
-    height: 20px;
+    margin: auto;
+    width: 19.8rem;
+    height: 2rem;
     opacity: 50%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    color: #6b6b6b;
+    font-family: $open_font;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: $brownish_grey;
   }
 
   &__logo {
+    margin:auto;
+
     &__image{
-    margin: 0px 108px 20px 109px;
-    width: 103px;
-    height: 40px;
+    margin: 0rem 10.8rem 2rem 10.9rem;
+    width: 10.3rem;
+    height: 4rem;
     cursor: pointer;
     } 
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 2560px) {
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 60px;
+    height: 6rem;
 
     &__text {
-      margin: 18px 0px 22px 41px;
+      margin: 1.8rem 0rem 2.2rem 4.1rem;
     }
 
     &__logo {
-
+      margin:auto;
+      
       &__image {
-      margin: 10px 40px 10px 386px;
-      } 
-    } 
-  }
-}
-
-@media (min-width: 1200px) {
-  .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 60px;
-
-    &__text {
-      margin: 18px 0px 22px 41px;
-    }
-
-    &__logo {
-
-      &__image {
-      margin: 10px 40px 10px 642px;
+      margin: 1rem 4rem 1rem 38.6rem;
       } 
     } 
   }
