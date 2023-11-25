@@ -1,0 +1,18 @@
+@mixin legend_title {
+  text-transform: uppercase;
+  height: 2.4rem;
+  color: $gunmetal;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+@mixin flex_row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+}
+@mixin fieldset {
+  border: none;
+  border-bottom: 0.1rem solid $white_three;
+  width: 28rem;
+}

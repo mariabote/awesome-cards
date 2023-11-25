@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 32rem;
+  .fieldset-design {
+    @include fieldset;
+    height: 34rem;
+    .legend-design {
+      @include flex_row;
+      .title-design {
+        @include legend_title;
+      }
+    }
+  }
+  .fieldset-fill {
+    @include fieldset;
+    height: 72.9rem;
+    .legend-fill {
+      @include flex_row;
+      .title-fill {
+        @include legend_title;
+      }
+    }
+  }
+  .fieldset-share {
+    @include fieldset;
+    height: 41.9rem;
+    .legend-share {
+      @include flex_row;
+      .title-share {
+        @include legend_title;
+      }
+    }
+  }
+}
