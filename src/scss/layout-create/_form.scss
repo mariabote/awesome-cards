@@ -27,8 +27,11 @@
     height: 41.9rem;
     .legend-share {
       @include flex_row;
+      margin: 0 0 0 1.5rem;
+      padding-top: 1.5rem;
       .title-share {
         @include legend_title;
+        
       }
     }
   }
