@@ -23,7 +23,6 @@
 
 /*main vir*/
 
-
 @media (min-width: 768px) {
   .icon-container{
     width: 32.5rem;
@@ -35,4 +34,12 @@
     .fa-object-ungroup, .fa-keyboard, .fa-share-nodes {
       font-size: 2.8rem;
     }
+}
+
+// MEDIA QUERIES SHARE TABLET
+
+@media (min-width: 768px) {
+  .fieldset-share{
+    width: 50vw;
+  }
 }
