@@ -1,0 +1,9 @@
+@mixin transparent_button {
+  background-color: rgba(0, 0, 0, 0);
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  border: solid 0.1rem $white_two;
+}
