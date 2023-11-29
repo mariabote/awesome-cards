@@ -17,6 +17,21 @@
   width: 28rem;
 }
 
+@mixin list_icons {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 1.6rem;
+  border: solid 0.2rem $hospital_green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin card_icons {
+  font-size: 1.8rem;
+  color: $dark_green_blue;
+}
+
 @mixin create-card {
   font-size: 1.8rem;
   font-weight: 600;
