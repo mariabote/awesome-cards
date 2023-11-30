@@ -24,22 +24,48 @@
 /*main vir*/
 
 @media (min-width: 768px) {
-  .icon-container{
+  .icon-container {
     width: 32.5rem;
     height: 8.6rem;
   }
-    .words {
-      font-size: 1.6rem;
-    }
-    .fa-object-ungroup, .fa-keyboard, .fa-share-nodes {
-      font-size: 2.8rem;
-    }
+  .words {
+    font-size: 1.6rem;
+  }
+  .fa-object-ungroup,
+  .fa-keyboard,
+  .fa-share-nodes {
+    font-size: 2.8rem;
+  }
 }
 
 // MEDIA QUERIES SHARE TABLET
 
 @media (min-width: 768px) {
-  .fieldset-share{
+  .fieldset-share {
     width: 50vw;
+  }
+}
+
+// MEDIA QUERIES create-profile TABLET
+@media (min-width: 768px) {
+  .main-create-flex {
+    width: 76.8rem;
+    height: 85.2rem;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    .form {
+      margin-top: 2rem;
+    }
+    .create-profile {
+      order: 2;
+      width: 32.9rem;
+      height: 81.2rem;
+      margin: 2rem 4rem 2rem 3rem;
+      border-radius: 0.6rem;
+      .create-profile-card {
+        margin-top: 17.3rem;
+      }
+    }
   }
 }
