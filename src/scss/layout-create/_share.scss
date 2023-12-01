@@ -16,13 +16,15 @@
 .create-card-orange, .create-card-grey {
  @include create-card();
 }
-.create-card-orange {
-  background-color: $dull_orange;
-}
-.hidden {
+.clicked {
   background-color: #d5d5d5;
-//display: none;
 }
+//.create-card-orange {
+//  background-color: $dull_orange;
+//}
+//.hidden {
+//display: none;
+//}
 .card-container-orange, .card-container-grey {
   border-bottom: solid #d8d8d8 1px;
   width: 28rem;
