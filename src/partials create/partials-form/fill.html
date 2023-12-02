@@ -1,0 +1,82 @@
+<div class="container">
+    <label class="container__label" for="Nombre-Completo">Nombre Completo
+        <input 
+            class="container__label__input"
+            id="Nombre-Completo"
+            name="Nombre Completo" 
+            type="text" 
+            placeholder="Ej: Sally Jill" 
+            autocomplete="cc-name"
+            required>
+    </label>
+    <label class="container__label" for="Puesto">Puesto
+        <input 
+            class="container__label__input"
+            id="Puesto" 
+            name="Puesto" 
+            type="text" 
+            placeholder="Ej: Front-end unicorn"
+            autocomplete="work"
+            required>
+    </label>
+    <label class="container__label" for="Imagen">Imagen de perfil
+        <div class="container__label__image">
+            <button class="container__label__image__button">
+                <input
+                class="container__label__image__button__file"
+                id="image"
+                name="image"
+                type="file"
+                accept="image/*"
+                required>Añadir imagen
+            </button>
+            <picture class="container__label__image__box">
+                <input class="container__label__image__box__preview">
+            </picture>
+        </div>
+    </label>
+    <label class="container__label" for="Email">Email
+        <input
+            class="container__label__input"
+            id="Email"
+            name="Email"
+            type="Email" 
+            placeholder="Ej: sally-hill@gmail.com" 
+            autocomplete="email"
+            pattern="/[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/"
+            required> 
+    </label>
+    <label class="container__label" for="Telefono">Teléfono
+        <input
+            class="container__label__input"
+            id="Telefono"
+            name="Teléfono"
+            type="tel"
+            placeholder="Ej: 555-55-55-55"
+            autocomplete="tel"
+            required> 
+    </label>
+    <label class="container__label" for="Linkedin">Linkedin
+        <input 
+            class="container__label__input" 
+            id="Linkedin"
+            name="Linkedin"
+            type="url" 
+            placeholder="Ej: linkedin.com/in/sally.hill"
+            autocomplete="url"
+            required> 
+    </label>
+    <label class="container__label" for="Github">Github
+        <input 
+            class="container__label__input"
+            id="Github"
+            name="Github"
+            type="url"
+            placeholder="Ej: @sally-hill"
+            autocomplete="url"
+            required> 
+    </label>
+</div>
+
+
+
