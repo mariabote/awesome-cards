@@ -1,22 +1,23 @@
 @mixin legend_title {
   text-transform: uppercase;
   height: 2.4rem;
+  margin-left: 1rem;
   color: $gunmetal;
   font-size: 1.8rem;
   font-weight: 600;
+  color: $gunmetal;
 }
-@mixin flex_row {
-  width: 28rem;
-  height: 2.4rem;
-  display: flex;
-  justify-content: flex-start;
-  gap: 1rem;
+@mixin legend_grid {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: 2.1rem 1fr 1.6rem;
+  grid-template-rows: 2.4rem;
   align-items: center;
+  cursor: pointer;
 }
 @mixin fieldset {
   border: none;
   border-bottom: 0.1rem solid $white_three;
-  width: 28rem;
   margin-top: 1rem;
 }
 
@@ -59,15 +60,7 @@
   color: $dull_orange;
 }
 
-@mixin title_arrow {
-  width: 27rem;
-  height: 2.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: $gunmetal;
-}
-
 @mixin arrow_icon {
   font-size: 1.8rem;
+  color: $gunmetal;
 }
