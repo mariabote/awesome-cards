@@ -1,0 +1,74 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: left;
+    margin-left: 2rem;
+    margin-right: 1.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+
+    &__label {
+       display: flex;
+       flex-direction: column;
+       font-family: $open_font;
+       font-size: 1.4rem;
+       line-height: 2rem;
+       color:$dark_green_blue;
+       width: 28.1rem;
+       margin-top: 2rem;
+
+        &__input{
+            width: 28.1rem;
+            height: 3rem;
+            margin-top: 0.7rem;
+            border:inside;
+            border: solid 0.1rem $hospital_green;
+            margin-top: 0.7rem;
+            padding-top:0.3rem;
+            padding-bottom: 0.7rem;
+            padding-left: 0.9rem;           
+        }
+
+        &__input::placeholder{
+            font-family: $open_font;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color:$pinkish_grey;     
+        }
+
+        &__image{
+            margin-top: 0.7rem;
+            height: 3rem;
+            display: flex;
+            gap: 2rem;
+
+            &__button{
+                width: 9.6rem;
+                border-radius: 0.3rem;
+                width: 14rem;
+                background-color: $dull_orange;
+                cursor: pointer;
+                font-family: $open_font;
+                font-size: 1.4rem;
+                line-height: 2rem;
+                color: $white_two;
+                border: 0.1rem solid $dull_orange;
+                box-shadow: 0 0 0.4 0 rgba(0, 0, 0, 0.32);
+                
+                &__file{
+                }
+            }
+
+            &__box{
+                
+                &__preview{
+                    width: 3rem;
+                    height: 3rem;
+                    border:inside;
+                    border: solid 0.1rem $hospital_green;
+                }
+            }
+
+        }
+    }
+}

@@ -6,6 +6,8 @@
   font-weight: 600;
 }
 @mixin flex_row {
+  width: 28rem;
+  height: 2.4rem;
   display: flex;
   justify-content: flex-start;
   gap: 1rem;
@@ -15,6 +17,7 @@
   border: none;
   border-bottom: 0.1rem solid $white_three;
   width: 28rem;
+  margin-top: 1rem;
 }
 
 @mixin list_icons {
@@ -46,4 +49,24 @@
   align-items: center;
   justify-content: center;
   margin: 3.5rem 0 3rem 4.5rem;
- }
+}
+
+@mixin fieldset_icons {
+  width: 2.1rem;
+  height: 1.8rem;
+  font-size: 1.8rem;
+  color: $dull_orange;
+}
+
+@mixin title_arrow {
+  width: 27rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $gunmetal;
+}
+
+@mixin arrow_icon {
+  font-size: 1.8rem;
+}
