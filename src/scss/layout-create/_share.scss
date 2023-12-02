@@ -1,4 +1,4 @@
-.space-between {
+/* .space-between {
   display: flex;
   align-items: center;
   gap: 13.5rem;
@@ -11,19 +11,21 @@
   font-size: 1.8rem;
   color: $gunmetal;
   //transform: rotate(180deg);
-  align-items: baseline;
-}
-.create-card-orange, .create-card-grey {
- @include create-card();
+  align-items: baseline; 
+}*/
+.create-card-orange,
+.create-card-grey {
+  @include create-card();
 }
 .create-card-orange {
   background-color: $dull_orange;
 }
 .hidden {
   background-color: #d5d5d5;
-//display: none;
+  //display: none;
 }
-.card-container-orange, .card-container-grey {
+.card-container-orange,
+.card-container-grey {
   border-bottom: solid #d8d8d8 1px;
   width: 28rem;
   margin-left: 1.5rem;
@@ -66,4 +68,3 @@
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
   }*/
 }
-

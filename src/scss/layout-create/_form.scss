@@ -1,50 +1,55 @@
 .form {
+  width: 90vw;
   display: flex;
   flex-direction: column;
-  width: 32rem;
-  margin: 1.7rem auto 3rem;
+  margin: 1.7rem 2rem 3rem;
   .fieldset-design {
-    @include fieldset;
     height: 20rem;
-
+    @include fieldset;
     .legend-design {
-      @include flex_row;
+      @include legend_grid;
       .icon-design {
         @include fieldset_icons;
       }
-      .title-arrow-design {
-        @include title_arrow;
-        .title-design {
-          @include legend_title;
-        }
-        .arrow-icon-design {
-          @include arrow_icon;
-        }
-      }
-    }
-  }
-  .fieldset-fill {
-    @include fieldset;
-    height: 59.4rem;
-    .legend-fill {
-      @include flex_row;
-      .title-fill {
+      .title-design {
         @include legend_title;
       }
+      .arrow-icon-design {
+        @include arrow_icon;
+      }
     }
   }
-  .fieldset-share {
-    @include fieldset;
-    height: 28.1rem;
+}
 
-    .legend-share {
-      @include flex_row;
-      margin: 0 0 0 1.5rem;
-      padding-top: 1.5rem;
-      align-items: baseline;
-      .title-share {
-        @include legend_title;
-      }
+.fieldset-fill {
+  @include fieldset;
+  height: 59.4rem;
+  .legend-fill {
+    @include legend_grid;
+    .icon-fill {
+      @include fieldset_icons;
+    }
+    .title-fill {
+      @include legend_title;
+    }
+    .arrow-icon-fill {
+      @include arrow_icon;
+    }
+  }
+}
+.fieldset-share {
+  @include fieldset;
+  height: 28.1rem;
+  .legend-share {
+    @include legend_grid;
+    .icon-share {
+      @include fieldset_icons;
+    }
+    .title-share {
+      @include legend_title;
+    }
+    .arrow-icon-share {
+      @include arrow_icon;
     }
   }
 }
