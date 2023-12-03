@@ -1,4 +1,4 @@
-/*main*/
+/*main index*/
 @media (min-width: 768px) {
   .first-section-main {
     margin: 3.1rem auto 2.7rem;
@@ -16,14 +16,10 @@
       }
     }
   }
+  /*main index vir*/
   .main-button {
     margin: 18.6rem auto 5.9rem;
   }
-}
-
-/*main vir*/
-
-@media (min-width: 768px) {
   .icon-container {
     width: 32.5rem;
     height: 8.6rem;
@@ -38,25 +34,14 @@
   }
 }
 
-// MEDIA QUERIES SHARE TABLET
-
-@media (min-width: 768px) {
-  .fieldset-share {
-    width: 50vw;
-  }
-}
-
+/*tablet create*/
 // MEDIA QUERIES create-profile TABLET
 @media (min-width: 768px) {
   .main-create-flex {
-    width: 76.8rem;
+    width: 100vw;
     height: 85.2rem;
     display: flex;
     flex-direction: row;
-    margin: auto;
-    .form {
-      margin-top: 2rem;
-    }
     .create-profile {
       order: 2;
       width: 32.9rem;
@@ -67,5 +52,33 @@
         margin-top: 17.3rem;
       }
     }
+  }
+  .form {
+    width: 39.9rem;
+    .fieldset-design {
+      @include fieldset_tablet;
+      .legend-design {
+        @include legend_tablet;
+      }
+    }
+    .fieldset-fill {
+      @include fieldset_tablet;
+      .legend-fill {
+        @include legend_tablet;
+      }
+    }
+    .fieldset-share {
+      @include fieldset_tablet;
+      .legend-share {
+        @include legend_tablet;
+      }
+    }
+  }
+}
+// MEDIA QUERIES SHARE TABLET
+
+@media (min-width: 768px) {
+  .fieldset-share {
+    width: 50vw;
   }
 }

@@ -64,3 +64,14 @@
   font-size: 1.8rem;
   color: $gunmetal;
 }
+
+@mixin fieldset_tablet {
+  width: 43rem;
+  display: grid;
+  grid-template-columns: 40rem;
+}
+@mixin legend_tablet {
+  width: 36.6rem;
+  display: grid;
+  grid-template-columns: 2.1rem 39.3rem 1.6rem;
+}
