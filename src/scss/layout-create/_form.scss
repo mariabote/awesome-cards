@@ -38,8 +38,9 @@
   }
 }
 .fieldset-share {
-  @include fieldset;
-  height: 28.1rem;
+  border: 0.1px solid transparent;
+  height: 30rem;
+  margin-top: 1rem;
   .legend-share {
     @include legend_grid;
     .icon-share {
