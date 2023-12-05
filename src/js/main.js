@@ -6,7 +6,7 @@ const info ={
     palette: '', 
     name: '',
     job: '',
-    image: '',
+    photo: '',
     phone: '', 
     email: '',
     linkedin: '', 
