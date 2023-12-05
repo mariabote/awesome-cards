@@ -15,3 +15,11 @@
 @import "pages/index";
 @import "pages/media-profile";
 @import "pages/media-desktop";
+
+.collapsed {
+  display: none;
+}
+
+.rotate-icon {
+  transform: rotate(180deg);
+}
