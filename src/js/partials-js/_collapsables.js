@@ -29,6 +29,12 @@ function toggleArrow (arrow) {
  */
 
 //EVENTOS
+document.addEventListener('DOMContentLoaded' , (event) => {
+   containerForm.classList.add ('collapsed');
+   arrowFill.classList.add ('rotate-icon');
+   containerShare.classList.add ('collapsed');
+   arrowShare.classList.add ('rotate-icon');
+});
 
 legendDesign.addEventListener('click', (event) => {
  if (containerForm.classList === ('collapsed') || containerShare.classList === ('collapsed')) {
@@ -37,7 +43,9 @@ legendDesign.addEventListener('click', (event) => {
 }
 else {
    containerForm.classList.add ('collapsed');
+   arrowFill.classList.add ('rotate-icon');
    containerShare.classList.add ('collapsed');
+   arrowShare.classList.add ('rotate-icon');
    containerDesign.classList.toggle ('collapsed');
    arrowDesign.classList.toggle ('rotate-icon');
 }
@@ -49,7 +57,9 @@ else {
      arrowFill.classList.toggle ('rotate-icon');}
   else {
      containerDesign.classList.add ('colapsed');
+     arrowDesign.classList.add ('rotate-icon');
      containerShare.classList.add ('collapsed');
+     arrowShare.classList.add ('rotate-icon');
      containerForm.classList.toggle ('collapsed');
      arrowFill.classList.toggle ('rotate-icon');
   }
@@ -61,7 +71,9 @@ else {
      arrowShare.classList.toggle ('rotate-icon');}
   else {
      containerDesign.classList.add ('colapsed');
+     arrowDesign.classList.add ('rotate-icon');
      containerForm.classList.add ('collapsed');
+     arrowFill.classList.add ('rotate-icon');
      containerShare.classList.toggle ('collapsed');
      arrowShare.classList.toggle ('rotate-icon');
   }
