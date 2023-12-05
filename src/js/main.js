@@ -2,6 +2,17 @@
 
 console.log('>> Ready :)');
 
+const info ={
+    palette: '', 
+    name: '',
+    job: '',
+    image: '',
+    phone: '', 
+    email: '',
+    linkedin: '', 
+    githbub:'', 
+}
+
 import './partials-js/_variables';
 import './partials-js/_collapsables';
 import './partials-js/_design';

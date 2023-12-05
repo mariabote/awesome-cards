@@ -17,7 +17,9 @@
     }
   }
 }
+
 /*main index vir*/
+
 @media (min-width: 768px) {
   .main-button {
     margin: 18.6rem auto 5.9rem;
@@ -29,9 +31,7 @@
   .words {
     font-size: 1.6rem;
   }
-  .fa-object-ungroup,
-  .fa-keyboard,
-  .fa-share-nodes {
+  .design-svg, .fill-svg, .share-svg {
     font-size: 2.8rem;
   }
 }
