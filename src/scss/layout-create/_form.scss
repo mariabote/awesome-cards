@@ -4,7 +4,6 @@
   flex-direction: column;
   margin: 1.7rem 2rem 3rem;
   .fieldset-design {
-    height: 20rem;
     @include fieldset;
     .legend-design {
       @include legend_grid;
@@ -23,7 +22,6 @@
 
 .fieldset-fill {
   @include fieldset;
-  height: 59.4rem;
   .legend-fill {
     @include legend_grid;
     .icon-fill {
@@ -39,7 +37,6 @@
 }
 .fieldset-share {
   @include fieldset;
-  height: 28.1rem;
   .legend-share {
     @include legend_grid;
     .icon-share {
