@@ -1,4 +1,3 @@
-'use strict'
 
 //VARIABLES
 
@@ -30,6 +29,7 @@ function toggleArrow (arrow) {
 
 //EVENTOS
 document.addEventListener('DOMContentLoaded' , (event) => {
+   debugger
    containerForm.classList.add ('collapsed');
    arrowFill.classList.add ('rotate-icon');
    containerShare.classList.add ('collapsed');
