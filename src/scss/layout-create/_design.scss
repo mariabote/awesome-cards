@@ -1,0 +1,51 @@
+.design_text{
+    font-size: 1.4rem;
+    font-family: $open_font;
+    text-transform: uppercase;
+    width: 62px;
+    height: 19px;
+    margin: 22px 151px 32px 0;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $gunmetal;
+  }
+
+.colorOnep1{
+    background-color: $dark-green-blue;
+}
+.colorTwop1{
+    background-color: $dirty-blue;
+}
+.colorThreep1{
+    background-color: $hospital-green;
+}
+.colorOnep2{
+    background-color: $dried-blood;
+}
+.colorTwop2{
+    background-color: $rusty-red;
+}
+.colorThreep2{
+    background-color:$tomato;
+}
+.colorOnep3{
+    background-color: $slate;
+}
+.colorTwop3{
+    background-color: $faded-orange;
+}
+.colorThreep3{
+    background-color: $light-grey-blue;
+}
+
+.palette{
+    width: 30px;
+    height: 25px;
+}
+.design_palette{
+ display: flex;
+ 
+}
