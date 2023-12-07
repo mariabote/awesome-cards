@@ -10,21 +10,41 @@ const tel = document.querySelector('.js_tel');
 const linkLinkedin = document.querySelector('.js_linkedin');
 const linkGithub = document.querySelector('.js_github');
 
+const cardTitle= document.querySelector('.js__img_card_title');
+const cardSubtitle = document.querySelector('.js__img_card_subtitle');
+const cardImage = document.querySelector('.js__img_card_image');
 
 // events
 
-createButton.addEventListener ('input', (event) => {
-    
+nombrecompleto.addEventListener ('input', (event) => {
+    event.preventDefault ();
+
     // Recoger el valor del Input
-   
-    info.name = nombrecompleto.value; 
+       const name = nombrecompleto.value; 
+      
+    // Poner input en la página:
+    cardTitle.innerHTML = name;
+})
+
+work.addEventListener ('input', (event) => {
+    event.preventDefault ();
+
+    // Recoger el valor del Input
     const job = work.value; 
-    const photo = image.value; 
+      
+    // Poner input en la página:
+    cardSubtitle.innerHTML = job;
+})
+
+/*  const photo = image.value; 
     const email = correo.value; 
     const phone = tel.value; 
     const linkedin = linkLinkedin.value; 
-    const github = linkGithub.value;
+    const github = linkGithub.value;*/
 
-})
+    
+    
 
-// poner el mensaje en la pagina: info.name.innerHTML = name; Pantallazos 2.2;
+    
+    
+    
