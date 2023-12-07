@@ -66,10 +66,8 @@ function shareClick (event) {
 
 //EVENTOS
 document.addEventListener('DOMContentLoaded' , (event) => {
-   containerFill.classList.add ('collapsed');
-   arrowFill.classList.add ('rotate-icon');
-   containerShare.classList.add ('collapsed');
-   arrowShare.classList.add ('rotate-icon');
+  addFill ();
+   addShare ();
 });
 
 legendDesign.addEventListener('click', designClick);
