@@ -16,6 +16,9 @@
 @import "pages/media-profile";
 @import "pages/media-desktop";
 
+.main-create-flex {
+  background: linear-gradient(to bottom, $white_four, $white_two 9%);
+}
 .collapsed {
   display: none;
 }
