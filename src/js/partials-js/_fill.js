@@ -4,7 +4,7 @@
 
 const nombrecompleto = document.querySelector('.js_name');
 const work = document.querySelector('.js_work');
-const image = document.querySelector('.js_image');
+const image = document.querySelector('.js__profile-upload-btn');
 const correo = document.querySelector('.js_email');
 const tel = document.querySelector('.js_tel');
 const linkLinkedin = document.querySelector('.js_linkedin');
@@ -12,7 +12,7 @@ const linkGithub = document.querySelector('.js_github');
 
 const cardTitle= document.querySelector('.js__img_card_title');
 const cardSubtitle = document.querySelector('.js__img_card_subtitle');
-const cardImage = document.querySelector('.js__img_card_image');
+const cardImage = document.querySelector('.js__profile-preview');
 
 // events
 
@@ -36,8 +36,8 @@ work.addEventListener ('input', (event) => {
     cardSubtitle.innerHTML = job;
 })
 
-/*  const photo = image.value; 
-    const email = correo.value; 
+/* Recoger el valor del Input
+    const email = correo.value;
     const phone = tel.value; 
     const linkedin = linkLinkedin.value; 
     const github = linkGithub.value;*/
