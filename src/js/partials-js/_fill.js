@@ -26,6 +26,13 @@ nombrecompleto.addEventListener ('input', (event) => {
     cardTitle.innerHTML = name;
 })
 
+/* const writeName = (event) =>{
+    event.preventDefault ();
+    const name = nombrecompleto.value; 
+   cardTitle.innerHTML = name;
+} */
+nombrecompleto.addEventListener ('input' , writeName);
+
 work.addEventListener ('input', (event) => {
     event.preventDefault ();
 
@@ -42,6 +49,7 @@ work.addEventListener ('input', (event) => {
     const linkedin = linkLinkedin.value; 
     const github = linkGithub.value;*/
 
+   
     
     
 
