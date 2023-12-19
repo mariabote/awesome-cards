@@ -9,8 +9,6 @@
   background-color: #d5d5d5;
   }
 }
-
-
 .card-already-created {
   display: flex;
   flex-direction: column;
@@ -37,7 +35,7 @@
   width: 29.2rem;
 }
 
-#customTwitterButton {
+.customTwitterButton {
   font-family: 'Poppins', sans-serif;
   width: 18.1rem;
   height: 3rem;
@@ -53,4 +51,7 @@
   border-radius: 10px;
   box-shadow: 1px 1px 6px 1px rgb(18 18 18 / 32%);
   z-index: 5;
+}
+.customTwitterButton:hover {
+  cursor: pointer;
 }
