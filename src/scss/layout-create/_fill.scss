@@ -41,6 +41,7 @@
             height: 3rem;
             display: flex;
             gap: 2rem;
+            
 
             &__button{
                 width: 9.6rem;
@@ -54,8 +55,9 @@
                 color: $white_two;
                 border: 0.1rem solid $dull_orange;
                 box-shadow: 0 0 0.4 0 rgba(0, 0, 0, 0.32);
-                
+                                
                 &__file{
+                    display: none;
                 }
             }
 

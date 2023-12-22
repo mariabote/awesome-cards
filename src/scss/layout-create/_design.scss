@@ -1,0 +1,70 @@
+.design_text{
+    font-size: 1.4rem;
+    font-family: $open_font;
+    text-transform: uppercase;
+    width: 62px;
+    height: 19px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $gunmetal;
+    margin: 12px 0 12px 0;
+  }
+
+.colorOnep1{
+    background-color: $dark-green-blue;
+}
+.colorTwop1{
+    background-color: $dirty-blue;
+}
+.colorThreep1{
+    background-color: $hospital-green;
+}
+.colorOnep2{
+    background-color: $dried-blood;
+}
+.colorTwop2{
+    background-color: $rusty-red;
+}
+.colorThreep2{
+    background-color:$tomato;
+}
+.colorOnep3{
+    background-color: $slate;
+}
+.colorTwop3{
+    background-color: $faded-orange;
+}
+.colorThreep3{
+    background-color: $light-grey-blue;
+}
+
+.sample{
+    width: 30px;
+    height: 25px;
+}
+.design_palette{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ 
+}
+.palette{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.palettes_container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px 0 20px 20px;
+}
+.input_palette{
+    width: 17px;
+    height: 17px;
+    margin: 15px 10px 15px 28px;
+}

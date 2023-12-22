@@ -66,12 +66,12 @@
 }
 
 @mixin fieldset_tablet {
-  width: 43rem;
+  width: 40rem;
   display: grid;
   grid-template-columns: 40rem;
 }
 @mixin legend_tablet {
   width: 36.6rem;
   display: grid;
-  grid-template-columns: 2.1rem 39.3rem 1.6rem;
+  grid-template-columns: 2.1rem 36rem 1.6rem;
 }

@@ -9,12 +9,13 @@
     flex-direction: row;
     .create-profile {
       order: 2;
-      width: 32.9rem;
+      width: 50vw;
       height: 81.2rem;
-      margin: 2rem 4rem 2rem 3rem;
+      margin: 2rem 4rem 2rem 1rem;
       border-radius: 0.6rem;
       .create-profile-card {
         margin-top: 17.3rem;
+        justify-content: center;
       }
     }
   }
