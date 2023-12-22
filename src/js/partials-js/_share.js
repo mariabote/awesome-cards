@@ -16,7 +16,7 @@ createButton.addEventListener('click', (event) => {
 
 twitterButton.addEventListener('click', (event) => {
 
-  // URL y texto que a compartir en Twitter
+  // URL y texto a compartir en Twitter
   const shareUrl = 'https://awesome-profile-card.com?id=A456DF0001';
   const shareText = '¡He creado mi nueva tarjeta profesional con Awesome Profile Cards!';
 
