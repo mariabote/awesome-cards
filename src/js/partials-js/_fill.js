@@ -31,7 +31,7 @@ nombrecompleto.addEventListener ('input', (event) => {
     const name = nombrecompleto.value; 
    cardTitle.innerHTML = name;
 } */
-nombrecompleto.addEventListener ('input' , writeName);
+/* nombrecompleto.addEventListener ('input' , writeName); */
 
 work.addEventListener ('input', (event) => {
     event.preventDefault ();
