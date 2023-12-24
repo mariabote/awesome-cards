@@ -13,49 +13,179 @@
     margin: 12px 0 12px 0;
   }
 
-.colorOnep1{
-    background-color: $dark-green-blue;
+
+.palette1 {
+    background-image: linear-gradient(to bottom, $hospital-green, lighten($hospital-green, 10%));
+    .create-profile-card-button{
+        .text-reset {
+            color: $dark-green-blue;
+        }
+        .reset-icon{
+            color: $dark-green-blue;
+        }
+    } 
+    .create-profile-card-content{
+        .img-card{        
+            border-left: solid 0.5rem $dark-green-blue;
+        } 
+        .img-card-title{
+            color: $dark-green-blue;
+        } 
+        .img-card-subtitle{
+            color: $dirty-blue;
+        }
+        [class*="card-list-icons-contact"] {
+            border: solid 0.2rem $hospital-green;
+            [class*="-icon"]{
+                color: $dark-green-blue;
+            }
+        }
+    }    
+
+    .bg1{
+        background-color: $dark-green-blue;
+    }
+    .bg2{
+        background-color: $dirty-blue;
+    }
+    .bg3{
+        background-color: $hospital-green;
+    }
 }
-.colorTwop1{
-    background-color: $dirty-blue;
+
+.palette2{
+    background-image: linear-gradient(to bottom, $tomato, lighten($tomato, 10%));
+    .create-profile-card-button{
+        .text-reset {
+            color: $dried-blood;
+        }
+        .reset-icon{
+            color: $dried-blood;
+        }
+    } 
+    .create-profile-card-content{
+        .img-card{        
+            border-left: solid 0.5rem $dried-blood;
+        } 
+        .img-card-title{
+            color: $dried-blood;
+        } 
+        .img-card-subtitle{
+            color: $rusty-red;
+        }
+        [class*="card-list-icons-contact"] {
+            border: solid 0.2rem $tomato;
+            [class*="-icon"]{
+                color: $dried-blood;
+            }
+        }
+    }    
+    .bg1{
+        background-color: $dried-blood;
+    }
+    .bg2{
+        background-color: $rusty-red;
+    }
+    .bg3{
+        background-color:$tomato;
+    }
 }
-.colorThreep1{
-    background-color: $hospital-green;
+
+.palette3{
+    background-image: linear-gradient(to bottom, $light-grey-blue, lighten($light-grey-blue, 10%));
+    .create-profile-card-button{
+        .text-reset {
+            color: $slate;
+        }
+        .reset-icon{
+            color: $slate;
+        }
+    } 
+    .create-profile-card-content{
+        .img-card{        
+            border-left: solid 0.5rem $slate;
+        } 
+        .img-card-title{
+            color: $slate;
+        } 
+        .img-card-subtitle{
+            color: $faded-orange;
+        }
+        [class*="card-list-icons-contact"] {
+            border: solid 0.2rem $light-grey-blue;
+            [class*="-icon"]{
+                color: $slate;
+            }
+        }
+    }    
+    .bg1{
+        background-color: $slate;
+    }
+    .bg2{
+        background-color: $faded-orange;
+    }
+    .bg3{
+        background-color: $light-grey-blue;
+    }
 }
-.colorOnep2{
-    background-color: $dried-blood;
-}
-.colorTwop2{
-    background-color: $rusty-red;
-}
-.colorThreep2{
-    background-color:$tomato;
-}
-.colorOnep3{
-    background-color: $slate;
-}
-.colorTwop3{
-    background-color: $faded-orange;
-}
-.colorThreep3{
-    background-color: $light-grey-blue;
+
+.palette4{
+    background-image: linear-gradient(to bottom, $dusty_pink, lighten($dusty_pink, 10%));
+    .create-profile-card-button{
+        .text-reset {
+            color: $strawberry;
+        }
+        .reset-icon{
+            color: $strawberry;
+        }
+    } 
+    .create-profile-card-content{
+        .img-card{        
+            border-left: solid 0.5rem $strawberry;
+        } 
+        .img-card-title{
+            color: $strawberry;
+        } 
+        .img-card-subtitle{
+            color: $peach;
+        }
+        [class*="card-list-icons-contact"] {
+            border: solid 0.2rem $dusty_pink;
+            [class*="-icon"]{
+                color: $strawberry;
+            }
+        }
+    }
+    
+    .bg1{
+        background-color: $strawberry;
+    }
+    .bg2{
+        background-color: $peach;
+    }
+    .bg3{
+        background-color: $dusty_pink;
+    }
 }
 
 .sample{
     width: 30px;
     height: 25px;
 }
+
 .design_palette{
  display: flex;
  flex-direction: column;
  justify-content: space-between;
  
 }
-.palette{
+
+.samples_container{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .palettes_container{
     display: flex;
     flex-direction: row;
@@ -63,8 +193,14 @@
     justify-content: space-between;
     margin: 20px 0 20px 20px;
 }
+
 .input_palette{
     width: 17px;
     height: 17px;
     margin: 15px 10px 15px 28px;
+}
+
+.no-bg{
+    background-image: none;
+    background-color: transparent;
 }
