@@ -13,14 +13,14 @@ const resetCard = document.querySelector('.js__create_profile_card_content').inn
 const restoreCard = () => { 
 
 completForm.reset ();
-/* cardTitle.innerHTML = 'Nombre Apellido';
+cardTitle.innerHTML = 'Nombre Apellido';
 cardSubtitle.innerHTML = 'Front-end developer';
 cardImage.classList.add ('img-card-image');
 iconPhone.href = '';
 iconEmail.href = '';
 iconLinkedin.href = '';
-iconGithub.href = ''; */
-document.querySelector('.js__create_profile_card_content').innerHTML = resetCard; //rstaura y no me coge de nuevo la funcion nombreCompleto.value
+iconGithub.href = '';
+/* document.querySelector('.js__create_profile_card_content').innerHTML = resetCard; */ //rstaura y no me coge de nuevo la funcion nombreCompleto.value
 // otra opción: refrescar la página completa
 }
 
