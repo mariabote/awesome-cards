@@ -11,7 +11,7 @@
 
 
  // SHARE SECTION
- 
+
 @media (min-width: 1024px) {
   .card-container {
    display: flex;
@@ -28,7 +28,8 @@
    display: flex;
    flex-wrap: wrap;
    padding: 1rem 0rem 0rem 4rem;
-   gap: 3rem;}
+   gap: 3rem;
+  }
  .hidden {
      display: none;
     }

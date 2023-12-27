@@ -22,16 +22,19 @@
 
 @media (min-width: 768px) {
   .main-button {
-    margin: 18.6rem auto 5.9rem;
+    margin: 16rem auto 5.9rem;
   }
+.container {
+  margin-top: 7rem;
   .icon-container {
     width: 32.5rem;
     height: 8.6rem;
+    .words {
+      font-size: 1.6rem;
+    }
+    .design-svg, .fill-svg, .share-svg {
+      font-size: 2.8rem;
+    }
   }
-  .words {
-    font-size: 1.6rem;
-  }
-  .design-svg, .fill-svg, .share-svg {
-    font-size: 2.8rem;
-  }
+}
 }
