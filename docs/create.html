@@ -1,20 +1,180 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title> Create awesome profile-cards</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    
-    <link rel="icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./assets/main-a442cb47.css">
-  </head>
 
-  <body>
-    <div class="page">
-      <footer>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> Create awesome profile-cards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4295ba9d45.js" crossorigin="anonymous"></script>
+
+  
+  <link rel="icon" href="./images/favicon.png" />
+  <script type="module" crossorigin src="./create.js"></script>
+  <link rel="modulepreload" crossorigin href="./js/main.js">
+  <link rel="stylesheet" href="./assets/create-2e0c628d.css">
+</head>
+
+<body>
+  <header>
+    <header>
+    <div class="header__logo-container">
+        <img class="header__logo" src="./images/tarjetas-molonas (1).svg" alt="Logo awesome Profile-Cards">
+    </div>
+
+</header>
+  </header>
+  <main class="main-create-flex">
+    <section class="create-profile">
+   <article class="create-profile-card js__create_profile_card">
+      <button type="reset" class="create-profile-card-button js__create_profile_card_button"> <i
+            class="fa-regular fa-trash-can reset-icon"></i><span class="text-reset">Reset</span></button>
+      <div class="create-profile-card-content js__create_profile_card_content">
+         <div class="img-card js__img_card">
+            <h2 class="img-card-title js__img_card_title">Nombre Apellido</h2>
+            <h3 class="img-card-subtitle js__img_card_subtitle">Front-end developer</h3>
+         </div>
+         <div class="img-card-image js__profile-preview">
+         </div>
+         <nav class="card-list js__card_list">
+            <ul class="card-list-icons js__card_list_icons">
+               <li class="card-list-icons-contact1 js__contact1"><a class="js__link_phone"
+                     href="#" id= "telephone" target="_blank"><i
+                        class="fa-solid fa-mobile-screen-button mobile-icon"></i></a></li>
+               <li class="card-list-icons-contact2 js__contact2"><a class="js__link_email"
+                     href="#" id= "email" target="_blank"><i
+                        class="fa-regular fa-envelope email-icon"></i></a></li>
+               <li class="card-list-icons-contact3 js__contact3"><a class="js__link_linkedin"
+                  href="#" id= "linkedin" target="_blank"><i
+                        class="fa-brands fa-linkedin-in in-icon"></i></a></li>
+               <li class="card-list-icons-contact4 js__contact4"><a class="js__link_github" 
+                  href="#" id= "github" target="_blank"><i class="fa-brands fa-github github-icon"></i></a></li>
+            </ul>
+         </nav>
+      </div>
+   </article>
+</section>
+    <form class="form js__form">
+  <fieldset class="fieldset-design js__fieldset_design">
+    <legend class="legend-design js__legend_design">
+      <i class="fa-regular fa-object-ungroup icon-design"></i>
+      <h3 class="title-design">Diseña</h3>
+      <i class="fa-solid fa-angle-up arrow-icon-design js__arrow_icon_design"></i>
+    </legend>
+
+    <div class="js__container_design">
+      <div class="palettes_container">
+    <h4 class="design_text">Colores</h4>
+    <ul class="design_palette">
+        <li class="samples_container palette1 no-bg">
+            <label for="palette1"></label>
+            <input checked="true" id="palette1" name="palette" type="radio" class="input_palette js__palette1" value>
+            <div class="bg1 sample"></div>
+            <div class="bg2 sample"></div>
+            <div class="bg3 sample"></div>
+        </li>
+
+        <li class="samples_container palette2 no-bg">
+            <label for="palette2"></label>
+            <input checked="true" id="palette2" name="palette" type="radio" class="input_palette js__palette2" value>
+            <div class="bg1 sample"></div>
+            <div class="bg2 sample"></div>
+            <div class="bg3 sample"></div>
+        </li>
+
+        <li class="samples_container palette3 no-bg">
+            <label for="palette3"></label>
+            <input checked="true" id="palette3" name="palette" type="radio" class="input_palette js__palette3" value>
+            <div class="bg1 sample"></div>
+            <div class="bg2 sample"></div>
+            <div class="bg3 sample"></div>
+        </li>
+
+        <li class="samples_container palette4 no-bg">
+            <label for="palette4"></label>
+            <input checked="true" id="palette4" name="palette" type="radio" class="input_palette js__palette4" value>
+            <div class="bg1 sample"></div>
+            <div class="bg2 sample"></div>
+            <div class="bg3 sample"></div>
+        </li>
+    </ul>
+</div>
+    </div>
+  </fieldset>
+  <fieldset class="fieldset-fill js__fieldset_fill">
+    <legend class="legend-fill js__legend_fill">
+      <i class="fa-regular fa-keyboard icon-fill"></i>
+      <h3 class="title-fill">Rellena</h3>
+      <i class="fa-solid fa-angle-up arrow-icon-fill js__arrow_icon_fill"></i>
+    </legend>
+    <div class="container js__container_fill">
+    <label class="container__label" for="Nombre-Completo">Nombre Completo
+        <input class="container__label__input js_name" id="Nombre-Completo" name="Nombre Completo" type="text"
+            placeholder="Ej: Sally Jill" autocomplete="cc-name" required>
+    </label>
+    <label class="container__label" for="Puesto">Puesto
+        <input class="container__label__input js_work" id="Puesto" name="Puesto" type="text"
+            placeholder="Ej: Front-end unicorn" autocomplete="work" required>
+    </label>
+    <label class="container__label" for="imagen">Imagen de perfil
+        <div class="container__label__image">
+            <button class="container__label__image__button">
+                <label class="container__label__image__button__label" for="photo">Añadir imagen
+                    <input class="container__label__image__button__file js__profile-upload-btn" id="photo" name="photo" type="file" accept="image/*" required>
+                </label>
+            </button>
+            <span class="container__label__image__box">
+                <input class="container__label__image__box__preview js__profile-image">
+            </span>
+        </div>
+    </label>
+    <label class="container__label" for="Email">Email
+        <input class="container__label__input js_email" id="Email" name="Email" type="Email"
+            placeholder="Ej: sally-hill@gmail.com" autocomplete="email"
+            required>
+    </label>
+    <label class="container__label" for="telephone">Teléfono
+        <input class="container__label__input js_tel" id="telephone" name="telephone" type="tel" placeholder="Ej: 555-55-55-55"
+            autocomplete="tel" required>
+    </label>
+    <label class="container__label" for="linkedin">Linkedin
+        <input class="container__label__input js_linkedin" id="linkedin" name="linkedin" type=text
+            placeholder="Ej: linkedin.com/in/sally.hill" required>
+    </label>
+    <label class="container__label " for="github">Github
+        <input class="container__label__input js_github" id="github" name="github" type="text" placeholder="Ej: @sally-hill"
+            required>
+    </label>
+</div>
+  </fieldset>
+  <fieldset class="fieldset-share js__fieldset_share">
+    <legend class="legend-share js__legend_share">
+      <i class="fa-solid fa-share-nodes icon-share"></i>
+      <h3 class="title-share"></i>Comparte</h3>
+      <i class="fa-solid fa-angle-up arrow-icon-share js__arrow_icon_share"></i>
+    </legend>
+    <div class="js__container_share">
+      <div class="card-container">
+  <a class="create-card js_createButton" href="#">
+    <i class="fa-regular fa-id-card card-svg">
+    </i>crear tarjeta</a>
+</div>
+<div class="card-already-created hidden js_cardCreated">
+  <span class="card-created">La tarjeta ha sido creada</span>
+  <a class="created-response" href="#">https://awesome-profile-card.com?id=A456DF0001</a>
+  <div class="js__twitterButton customTwitterButton" id="customTwitterButton">Compartir en Twitter</div>
+</div>
+    </div>
+  </fieldset>
+</form>
+  </main>
+  <footer>
+    <footer>
   <small class="footer">
     <div class="footer__text">
       Awesome profile-cards &copy;2023
@@ -25,7 +185,8 @@
   </small>
 </footer>
 
-    </div>
-    <script src="./js/main.js"></script>
-  </body>
+  </footer>
+  
+  <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+</body>
 </html>

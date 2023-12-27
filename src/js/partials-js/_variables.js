@@ -13,7 +13,7 @@ const fieldsetShare = document.querySelector('.js__fieldset_share');
 const legendShare = document.querySelector('.js__legend_share');
 const arrowShare = document.querySelector('.js__arrow_icon_share');
 
-const nombrecompleto = document.querySelector('.js_name');
+const fullname = document.querySelector('.js_name');
 const work = document.querySelector('.js_work');
 const image = document.querySelector('.js_image');
 const email = document.querySelector('.js_email');

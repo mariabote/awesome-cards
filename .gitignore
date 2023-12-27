@@ -46,6 +46,7 @@ lerna-debug.log*
 node_modules/
 dist
 dist-ssr
+pruebas-js.js
 *.local
 
 # Sass

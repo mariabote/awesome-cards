@@ -27,12 +27,21 @@ const linkGithub = document.querySelector('.js__link_github');
 fullname.addEventListener ('input', (event) => {
     event.preventDefault ();
 
-    //Insert Input Value:
-    const inputName = fullname.value;
+//Insert Input Value:
+const inputName = fullname.value;
    
-    // Write input on card:
-    cardTitle.innerHTML = inputName;
+// Write input on card:
+cardTitle.innerHTML = inputName;
+    
+          
 })
+
+/* const writeName = (event) =>{
+    event.preventDefault ();
+    const name = fullname.value; 
+   cardTitle.innerHTML = name;
+} */
+/* nombrecompleto.addEventListener ('input' , writeName); */
 
 work.addEventListener ('input', (event) => {
     event.preventDefault ();

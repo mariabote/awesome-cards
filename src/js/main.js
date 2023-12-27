@@ -3,11 +3,11 @@
 console.log('>> Ready :)');
 
 const info ={
-    palette: '', 
-    name: '',
-    job: '',
+    inputPalette: '', 
+    fullname: '',
+    work: '',
     photo: '',
-    phone: '', 
+    telephone: '', 
     email: '',
     linkedin: '', 
     githbub:'', 
