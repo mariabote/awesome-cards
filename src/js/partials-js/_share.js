@@ -1,3 +1,4 @@
+'use strict';
 //  VARIABLES
 const createButton = document.querySelector('.js_createButton');
 const cardCreated = document.querySelector('.js_cardCreated');
