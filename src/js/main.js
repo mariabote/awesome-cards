@@ -2,7 +2,7 @@
 
 console.log('>> Ready :)');
 
-const info ={
+const data ={
     palette: '', 
     name: '',
     job: '',
@@ -12,6 +12,7 @@ const info ={
     linkedin: '', 
     githbub:'', 
 }
+
 
 import './partials-js/_variables';
 import './partials-js/_collapsables';

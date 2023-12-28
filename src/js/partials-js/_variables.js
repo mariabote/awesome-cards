@@ -25,7 +25,6 @@ const github = document.querySelector('.js_github');
 
 const createButton = document.querySelector('.js_createButton');
 const cardCreated = document.querySelector('.js_cardCreated');
-
 const cardTitle= document.querySelector('.js__img_card_title');
 const cardSubtitle = document.querySelector('.js__img_card_subtitle');
 const cardImage = document.querySelector('.js__img_card_image');

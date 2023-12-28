@@ -3,16 +3,54 @@
 const createButton = document.querySelector('.js_createButton');
 const cardCreated = document.querySelector('.js_cardCreated');
 const twitterButton = document.querySelector('.js__twitterButton');
+let shareResponse = document.querySelector('.js__shareResponse');
+let createdResponse = document.querySelector('.js__createdResponse');
+const data ={
+  palette: '', 
+  name: '',
+  job: '',
+  photo: '',
+  phone: '', 
+  email: '',
+  linkedin: '', 
+  githbub:'', 
+}
+
+// inputPalette (colores),  createButton botón CREAR
+//
 
 //  FUNCIONES
 function toggleCardCreated() {
   cardCreated.classList.toggle('hidden');
 }
+
+function handleClickCreate() {
+ fetch('https://dev.adalab.es/api/card/',
+ {method: 'POST',
+  headers: {'Content-Type': 'application/json'},
+  body: JSON.stringify(data)})
+  .then (response => response.json())
+  .then (dataResponse => {
+    
+    console.log(dataResponse);   
+    if ( dataResponse.success) {
+      
+      createdResponse.innerHTML = shareUrl;
+    }
+    else {
+      //Mensajito error
+      shareResponse.innerHTML = 'Debes completar la información para obtener tu tarjeta';
+      createdResponse.innerHTML = '';
+    }
+  });  
+}
+
 //  EVENTOS
 createButton.addEventListener('click', (event) => {
   event.preventDefault();
   createButton.classList.toggle('clicked');
   toggleCardCreated();
+  handleClickCreate();
 }); 
 
 twitterButton.addEventListener('click', (event) => {
