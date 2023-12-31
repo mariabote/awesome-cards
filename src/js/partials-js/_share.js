@@ -5,19 +5,17 @@ const cardCreated = document.querySelector('.js_cardCreated');
 const twitterButton = document.querySelector('.js__twitterButton');
 let shareResponse = document.querySelector('.js__shareResponse');
 let createdResponse = document.querySelector('.js__createdResponse');
-const data ={
-  palette: '', 
-  name: '',
-  job: '',
-  photo: '',
-  phone: '', 
-  email: '',
-  linkedin: '', 
-  githbub:'', 
-}
-
-// inputPalette (colores),  createButton botón CREAR
-//
+let shareUrl = '';
+// DESIGN
+const inputPalette = document.querySelectorAll('input[name="palette"]');
+// FILL
+const fullname = document.querySelector('.js_name');
+const work = document.querySelector('.js_work');
+const image = document.querySelector('.js__profile-upload-btn');
+const email = document.querySelector('.js_email');
+const telephone = document.querySelector('.js_tel');
+const linkedin = document.querySelector('.js_linkedin');
+const github = document.querySelector('.js_github');
 
 //  FUNCIONES
 function toggleCardCreated() {
@@ -25,6 +23,19 @@ function toggleCardCreated() {
 }
 
 function handleClickCreate() {
+  const selectedPalette = Array.from(inputPalette).find(input => input.checked);
+  const selectedPaletteValue = selectedPalette ? selectedPalette.value : '';
+  console.log('PALETA SELECCIONADA', selectedPaletteValue);
+  const data ={
+    palette: selectedPaletteValue,
+    name: fullname.value,
+    job: work.value,
+    photo: image.value,
+    phone: telephone.value, 
+    email: email.value,
+    linkedin: linkedin.value, 
+    github: github.value.replace('@', ''), 
+  };
  fetch('https://dev.adalab.es/api/card/',
  {method: 'POST',
   headers: {'Content-Type': 'application/json'},
@@ -33,14 +44,13 @@ function handleClickCreate() {
   .then (dataResponse => {
     
     console.log(dataResponse);   
-    if ( dataResponse.success) {
-      
+    if (dataResponse.success) {
       createdResponse.innerHTML = shareUrl;
     }
     else {
       //Mensajito error
       shareResponse.innerHTML = 'Debes completar la información para obtener tu tarjeta';
-      createdResponse.innerHTML = '';
+      createdResponse.innerHTML = shareUrl='';
     }
   });  
 }
@@ -50,13 +60,14 @@ createButton.addEventListener('click', (event) => {
   event.preventDefault();
   createButton.classList.toggle('clicked');
   toggleCardCreated();
+  console.log(handleClickCreate);
   handleClickCreate();
 }); 
 
 twitterButton.addEventListener('click', (event) => {
 
   // URL y texto a compartir en Twitter
-  let shareUrl = 'https://awesome-profile-card.com?id=A456DF0001';
+  shareUrl = '';
   const shareText = '¡He creado mi nueva tarjeta profesional con Awesome Profile Cards!';
 
   // Construir el enlace de Twitter con los parámetros necesarios
