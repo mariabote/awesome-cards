@@ -4,16 +4,6 @@ const fr = new FileReader();
 const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
 const profilePreview = document.querySelector('.js__profile-preview');
-const data ={
-  palette: '', 
-  name: '',
-  job: '',
-  photo: '',
-  phone: '', 
-  email: '',
-  linkedin: '', 
-  githbub:'', 
-}
 
 /**
  * Recoge el archivo añadido al campo de tipo "file"

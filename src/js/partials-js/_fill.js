@@ -4,17 +4,6 @@
 
     //-form:
 const fullname = document.querySelector('.js_name');
-const work = document.querySelector('.js_work');
-const image = document.querySelector('.js__profile-upload-btn');
-const email = document.querySelector('.js_email');
-const telephone = document.querySelector('.js_tel');
-const linkedin = document.querySelector('.js_linkedin');
-const github = document.querySelector('.js_github');
-
-    //-image:
-const cardTitle= document.querySelector('.js__img_card_title');
-const cardSubtitle = document.querySelector('.js__img_card_subtitle');
-const cardImage = document.querySelector('.js__profile-preview');
 
     //-links: 
 const linkEmail = document.querySelector('.js__link_email');
@@ -32,6 +21,8 @@ fullname.addEventListener ('input', (event) => {
    
     // Write input on card:
     cardTitle.innerHTML = inputName;
+    
+    data.name = inputName;
 })
 
 work.addEventListener ('input', (event) => {
@@ -42,6 +33,8 @@ work.addEventListener ('input', (event) => {
    
     // Write input on card:
     cardSubtitle.innerHTML = inputJob;
+
+    data.job = inputJob;
 })
 
 linkEmail.addEventListener('click', (event) =>{

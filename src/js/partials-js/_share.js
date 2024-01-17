@@ -1,21 +1,12 @@
 'use strict';
 //  VARIABLES
-const createButton = document.querySelector('.js_createButton');
-const cardCreated = document.querySelector('.js_cardCreated');
 const twitterButton = document.querySelector('.js__twitterButton');
 let shareResponse = document.querySelector('.js__shareResponse');
 let createdResponse = document.querySelector('.js__createdResponse');
 let shareUrl = '';
-// DESIGN
-const inputPalette = document.querySelectorAll('input[name="palette"]');
-// FILL
-const fullname = document.querySelector('.js_name');
-const work = document.querySelector('.js_work');
-const image = document.querySelector('.js__profile-upload-btn');
-const email = document.querySelector('.js_email');
-const telephone = document.querySelector('.js_tel');
-const linkedin = document.querySelector('.js_linkedin');
-const github = document.querySelector('.js_github');
+
+
+
 
 //  FUNCIONES
 function toggleCardCreated() {
@@ -23,19 +14,10 @@ function toggleCardCreated() {
 }
 
 function handleClickCreate() {
-  const selectedPalette = Array.from(inputPalette).find(input => input.checked);
-  const selectedPaletteValue = selectedPalette ? selectedPalette.value : '';
-  console.log('PALETA SELECCIONADA', selectedPaletteValue);
-  const data ={
-    palette: selectedPaletteValue,
-    name: fullname.value,
-    job: work.value,
-    photo: image.value,
-    phone: telephone.value, 
-    email: email.value,
-    linkedin: linkedin.value, 
-    github: github.value.replace('@', ''), 
-  };
+  data.email = email.value;
+  data.phone = tel.value;
+  data.linkedin = linkedin.value;
+  data.github = github.value.replace('@', '');
  fetch('https://dev.adalab.es/api/card/',
  {method: 'POST',
   headers: {'Content-Type': 'application/json'},
@@ -60,7 +42,6 @@ createButton.addEventListener('click', (event) => {
   event.preventDefault();
   createButton.classList.toggle('clicked');
   toggleCardCreated();
-  console.log(handleClickCreate);
   handleClickCreate();
 }); 
 
