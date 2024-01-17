@@ -4,9 +4,7 @@ const twitterButton = document.querySelector('.js__twitterButton');
 let shareResponse = document.querySelector('.js__shareResponse');
 let createdResponse = document.querySelector('.js__createdResponse');
 let shareUrl = '';
-
-
-
+let dataResponse;
 
 //  FUNCIONES
 function toggleCardCreated() {
@@ -18,12 +16,15 @@ function handleClickCreate() {
   data.phone = tel.value;
   data.linkedin = linkedin.value;
   data.github = github.value.replace('@', '');
+
  fetch('https://dev.adalab.es/api/card/',
  {method: 'POST',
   headers: {'Content-Type': 'application/json'},
   body: JSON.stringify(data)})
   .then (response => response.json())
   .then (dataResponse => {
+    
+    shareUrl = dataResponse.cardURL;
     
     console.log(dataResponse);   
     if (dataResponse.success) {
@@ -34,6 +35,7 @@ function handleClickCreate() {
       shareResponse.innerHTML = 'Debes completar la información para obtener tu tarjeta';
       createdResponse.innerHTML = shareUrl='';
     }
+  
   });  
 }
 
@@ -45,10 +47,11 @@ createButton.addEventListener('click', (event) => {
   handleClickCreate();
 }); 
 
-twitterButton.addEventListener('click', (event) => {
 
+twitterButton.addEventListener('click', (event) => {
+handleClickCreate();
   // URL y texto a compartir en Twitter
-  shareUrl = '';
+  shareUrl;
   const shareText = '¡He creado mi nueva tarjeta profesional con Awesome Profile Cards!';
 
   // Construir el enlace de Twitter con los parámetros necesarios
