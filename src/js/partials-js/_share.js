@@ -5,9 +5,6 @@ let shareResponse = document.querySelector('.js__shareResponse');
 let createdResponse = document.querySelector('.js__createdResponse');
 let shareUrl = '';
 
-
-
-
 //  FUNCIONES
 function toggleCardCreated() {
   cardCreated.classList.toggle('hidden');
@@ -15,7 +12,7 @@ function toggleCardCreated() {
 
 function handleClickCreate() {
   data.email = email.value;
-  data.phone = tel.value;
+  data.phone = phone.value;
   data.linkedin = linkedin.value;
   data.github = github.value.replace('@', '');
  fetch('https://dev.adalab.es/api/card/',
@@ -27,7 +24,7 @@ function handleClickCreate() {
     
     console.log(dataResponse);   
     if (dataResponse.success) {
-      createdResponse.innerHTML = shareUrl;
+      createdResponse.innerHTML = dataResponse;
     }
     else {
       //Mensajito error
@@ -45,10 +42,11 @@ createButton.addEventListener('click', (event) => {
   handleClickCreate();
 }); 
 
+function twitterBtnClick() {
 twitterButton.addEventListener('click', (event) => {
 
   // URL y texto a compartir en Twitter
-  shareUrl = '';
+  shareUrl = dataResponse;
   const shareText = '¡He creado mi nueva tarjeta profesional con Awesome Profile Cards!';
 
   // Construir el enlace de Twitter con los parámetros necesarios
@@ -57,3 +55,5 @@ twitterButton.addEventListener('click', (event) => {
   // Abrir una nueva ventana emergente con el enlace de Twitter
   window.open(twitterLink, '_blank', 'width=600,height=600');
 });
+}
+twitterBtnClick();

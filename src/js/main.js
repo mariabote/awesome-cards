@@ -7,7 +7,7 @@ const data ={
     name: '',
     job: '',
     photo: '',
-    telephone: '', 
+    phone: '', 
     email: '',
     linkedin: '', 
     github:'', 
