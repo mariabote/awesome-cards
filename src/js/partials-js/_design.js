@@ -13,6 +13,7 @@ const createProfile = document.querySelector('.create-profile');
 for (let i = 0; i < inputPalette.length; i++){
     inputPalette[i].addEventListener('click', () => {
         createProfile.className = `create-profile ${inputPalette[i].id}`;
+        data.palette = inputPalette[i].value;
     })
   }
 
