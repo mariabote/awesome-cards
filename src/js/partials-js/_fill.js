@@ -23,6 +23,7 @@ const inputName = fullname.value;
     cardTitle.innerHTML = inputName;
     
     data.name = inputName;
+    
 })
 
 /* const writeName = (event) =>{
@@ -70,7 +71,7 @@ linkGithub.addEventListener('click', (event) =>{
     event.preventDefault ();
 
     //Insert Input Value:
-    const inputGithub = 'https://github.com'+ github.value.replace('@', '/');
+    const inputGithub = 'https://github.com'+ github.value.replace('@', '');
 
     //Open url: 
     window.open(inputGithub, '_blank');
