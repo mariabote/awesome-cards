@@ -7,7 +7,8 @@ const restoreCard = () => {
 completForm.reset ();
 cardTitle.innerHTML = 'Nombre Apellido';
 cardSubtitle.innerHTML = 'Front-end developer';
-cardImage.classList.add ('img-card-image');
+cardImage.classList.add('img-card-image');
+cardImage.style.backgroundImage = 'url(../images/card-rata-gafas.jpg)';
 iconPhone.href = '';
 iconEmail.href = '';
 iconLinkedin.href = '';
