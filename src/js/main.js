@@ -2,6 +2,8 @@
 
 console.log('>> Ready :)');
 
+
+
 const data ={
     palette: '', 
     name: '',
@@ -12,6 +14,7 @@ const data ={
     linkedin: '', 
     github:'', 
 }
+
 
 import './partials-js/_variables.js';
 import './partials-js/_collapsables.js';

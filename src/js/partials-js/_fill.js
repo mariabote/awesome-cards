@@ -23,7 +23,7 @@ const inputName = fullname.value;
     cardTitle.innerHTML = inputName;
     
     data.name = inputName;
-    
+    localStorage.setItem("name", inputName);
 })
 
 /* const writeName = (event) =>{
@@ -43,6 +43,7 @@ work.addEventListener ('input', (event) => {
     cardSubtitle.innerHTML = inputJob;
 
     data.job = inputJob;
+    localStorage.setItem("job", inputJob);
 })
 
 linkEmail.addEventListener('click', (event) =>{
@@ -50,22 +51,35 @@ linkEmail.addEventListener('click', (event) =>{
 
     //Insert Input Value:
     const inputEmail = 'mailto:' + email.value;
-
+    
+  
     //Open email: 
     window.location.href = inputEmail;
-
 })
+
+email.addEventListener('input', (event) => {
+  event.preventDefault ();
+  const inputEmailForm = email.value;
+  data.email = inputEmailForm;
+  localStorage.setItem("email", inputEmailForm);
+});
     
 linkLinkedin.addEventListener('click', (event) =>{
     event.preventDefault ();
 
     //Insert Input Value:
     const inputLinkedin = 'https://www.' + linkedin.value;
-
+    
     //Open url: 
     window.open(inputLinkedin, '_blank');
-
 })
+
+linkedin.addEventListener('input', (event) => {
+    event.preventDefault ();
+    const inputLinkedinForm = linkedin.value;
+    data.linkedin = inputLinkedinForm;
+    localStorage.setItem("linkedIn", inputLinkedinForm);
+});
 
 linkGithub.addEventListener('click', (event) =>{
     event.preventDefault ();
@@ -78,6 +92,13 @@ linkGithub.addEventListener('click', (event) =>{
 
 })
 
+github.addEventListener('input', (event) => {
+    event.preventDefault ();
+    const inputGithubForm = github.value;
+    data.github = inputGithubForm;
+    localStorage.setItem("github", inputGithubForm);
+});
+
 linkPhone.addEventListener('click', (event) =>{
     event.preventDefault ();
 
@@ -88,5 +109,12 @@ linkPhone.addEventListener('click', (event) =>{
     window.location.href = 'tel:'+ inputPhone;
 
 })
-    
+
+tel.addEventListener('input', (event) => {
+    event.preventDefault ();
+    const inputTel = tel.value;
+    data.phone = inputTel;
+    localStorage.setItem("phone", inputTel);
+});
+
     

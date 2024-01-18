@@ -55,8 +55,34 @@ function shareClick (event) {
 
 //EVENTOS
 document.addEventListener('DOMContentLoaded' , (event) => {
-  addFill ();
+   addFill ();
    addShare ();
+   const storedName = localStorage.getItem('name');
+   if (storedName) {
+     fullname.value = storedName;
+     cardTitle.innerHTML = storedName;
+   }
+   const storedJob = localStorage.getItem('job');
+   if (storedJob) {
+     work.value = storedJob;
+     work.innerHTML = storedJob;
+   }
+   const storedEmail = localStorage.getItem('email');
+   if (storedEmail) {
+     email.value = storedEmail;
+   }
+   const storedLinkedIn = localStorage.getItem('linkedIn');
+   if (storedLinkedIn) {
+     linkedin.value = storedLinkedIn;
+   }
+   const storedGithub = localStorage.getItem('github');
+   if (storedGithub) {
+     github.value = storedGithub;
+   }
+   const storedPhone = localStorage.getItem('phone');
+   if (storedPhone) {
+     tel.value = storedPhone;
+   }
 });
 
 legendDesign.addEventListener('click', designClick);

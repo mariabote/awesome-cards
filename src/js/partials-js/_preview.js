@@ -13,6 +13,7 @@ iconPhone.href = '';
 iconEmail.href = '';
 iconLinkedin.href = '';
 iconGithub.href = '';
+localStorage.clear();
 /* document.querySelector('.js__create_profile_card_content').innerHTML = resetCard; */ //rstaura y no me coge de nuevo la funcion nombreCompleto.value
 // otra opción: refrescar la página completa
 }
