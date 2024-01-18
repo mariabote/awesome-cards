@@ -32,7 +32,7 @@
             color: $dark-green-blue;
         } 
         .img-card-subtitle{
-            color: $dirty-blue;
+            color: $dark-green-blue;
         }
         [class*="card-list-icons-contact"] {
             border: solid 0.2rem $hospital-green;
@@ -46,10 +46,10 @@
         background-color: $dark-green-blue;
     }
     .bg2{
-        background-color: $dirty-blue;
+        background-color: $hospital-green;
     }
     .bg3{
-        background-color: $hospital-green;
+        background-color:$dirty-blue ;
     }
 }
 
@@ -71,7 +71,7 @@
             color: $dried-blood;
         } 
         .img-card-subtitle{
-            color: $rusty-red;
+            color: $dried-blood;
         }
         [class*="card-list-icons-contact"] {
             border: solid 0.2rem $tomato;
@@ -84,10 +84,10 @@
         background-color: $dried-blood;
     }
     .bg2{
-        background-color: $rusty-red;
+        background-color: $tomato;
     }
     .bg3{
-        background-color:$tomato;
+        background-color:$rusty-red;
     }
 }
 
@@ -109,7 +109,7 @@
             color: $slate;
         } 
         .img-card-subtitle{
-            color: $faded-orange;
+            color: $slate;
         }
         [class*="card-list-icons-contact"] {
             border: solid 0.2rem $light-grey-blue;
@@ -122,51 +122,51 @@
         background-color: $slate;
     }
     .bg2{
-        background-color: $faded-orange;
+        background-color: $light-grey-blue;
     }
     .bg3{
-        background-color: $light-grey-blue;
+        background-color: $faded-orange;
     }
 }
 
-.palette4{
-    background-image: linear-gradient(to bottom, $dusty_pink, lighten($dusty_pink, 10%));
-    .create-profile-card-button{
-        .text-reset {
-            color: $strawberry;
-        }
-        .reset-icon{
-            color: $strawberry;
-        }
-    } 
-    .create-profile-card-content{
-        .img-card{        
-            border-left: solid 0.5rem $strawberry;
-        } 
-        .img-card-title{
-            color: $strawberry;
-        } 
-        .img-card-subtitle{
-            color: $peach;
-        }
-        [class*="card-list-icons-contact"] {
-            border: solid 0.2rem $dusty_pink;
-            [class*="-icon"]{
-                color: $strawberry;
-            }
-        }
-    }
+// .palette4{
+//     background-image: linear-gradient(to bottom, $dusty_pink, lighten($dusty_pink, 10%));
+//     .create-profile-card-button{
+//         .text-reset {
+//             color: $strawberry;
+//         }
+//         .reset-icon{
+//             color: $strawberry;
+//         }
+//     } 
+//     .create-profile-card-content{
+//         .img-card{        
+//             border-left: solid 0.5rem $strawberry;
+//         } 
+//         .img-card-title{
+//             color: $strawberry;
+//         } 
+//         .img-card-subtitle{
+//             color: $peach;
+//         }
+//         [class*="card-list-icons-contact"] {
+//             border: solid 0.2rem $dusty_pink;
+//             [class*="-icon"]{
+//                 color: $strawberry;
+//             }
+//         }
+//     }
     
-    .bg1{
-        background-color: $strawberry;
-    }
-    .bg2{
-        background-color: $peach;
-    }
-    .bg3{
-        background-color: $dusty_pink;
-    }
-}
+//     .bg1{
+//         background-color: $strawberry;
+//     }
+//     .bg2{
+//         background-color: $peach;
+//     }
+//     .bg3{
+//         background-color: $dusty_pink;
+//     }
+// }
 
 .sample{
     width: 30px;
