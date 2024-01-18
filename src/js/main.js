@@ -13,7 +13,6 @@ const data ={
     github:'', 
 }
 
-
 import './partials-js/_variables.js';
 import './partials-js/_collapsables.js';
 import './partials-js/_design.js';
