@@ -28,6 +28,7 @@ function handleClickCreate() {
     
     console.log(dataResponse);   
     if (dataResponse.success) {
+      shareResponse.innerHTML = 'La tarjeta ha sido creada';
       createdResponse.innerHTML = shareUrl;
     }
     else {
@@ -35,7 +36,6 @@ function handleClickCreate() {
       shareResponse.innerHTML = 'Debes completar la información para obtener tu tarjeta';
       createdResponse.innerHTML = shareUrl='';
     }
-  
   });  
 }
 
@@ -60,3 +60,4 @@ handleClickCreate();
   // Abrir una nueva ventana emergente con el enlace de Twitter
   window.open(twitterLink, '_blank', 'width=600,height=600');
 });
+
