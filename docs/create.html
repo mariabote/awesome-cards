@@ -1,36 +1,37 @@
 <DOCTYPE html>
-<html lang="en">
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> Create awesome profile-cards</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/4295ba9d45.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Create awesome profile-cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4295ba9d45.js" crossorigin="anonymous"></script>
 
-  
-  <link rel="icon" href="./images/favicon.png" />
-  <script type="module" crossorigin src="./create.js"></script>
-  <link rel="modulepreload" crossorigin href="./js/main.js">
-  <link rel="stylesheet" href="./assets/create-2e0c628d.css">
-</head>
+    
+    <link rel="icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./assets/create-b568305d.css">
+  </head>
 
-<body>
-  <header>
+  <body>
     <header>
+      <header>
     <div class="header__logo-container">
-        <img class="header__logo" src="./images/tarjetas-molonas (1).svg" alt="Logo awesome Profile-Cards">
+        <a href="index.html"><img class="header__logo" src="./images/tarjetas-molonas (1).svg"
+                alt="Logo awesome Profile-Cards"></a>
     </div>
 
 </header>
-  </header>
-  <main class="main-create-flex">
-    <section class="create-profile">
+    </header>
+    <main class="main-create-flex">
+      <section class="create-profile">
    <article class="create-profile-card js__create_profile_card">
       <button type="reset" class="create-profile-card-button js__create_profile_card_button"> <i
             class="fa-regular fa-trash-can reset-icon"></i><span class="text-reset">Reset</span></button>
@@ -59,7 +60,7 @@
       </div>
    </article>
 </section>
-    <form class="form js__form">
+      <form class="form js__form">
   <fieldset class="fieldset-design js__fieldset_design">
     <legend class="legend-design js__legend_design">
       <i class="fa-regular fa-object-ungroup icon-design"></i>
@@ -71,37 +72,37 @@
       <div class="palettes_container">
     <h4 class="design_text">Colores</h4>
     <ul class="design_palette">
-        <li class="samples_container palette1 no-bg">
+        <li class="samples_container palette1 no-bg" id="first_palette">
             <label for="palette1"></label>
-            <input checked="true" id="palette1" name="palette" type="radio" class="input_palette js__palette1" value>
+            <input checked="" id="palette1" name="palette" type="radio" class="input_palette js__palette1" value="1">
             <div class="bg1 sample"></div>
             <div class="bg2 sample"></div>
             <div class="bg3 sample"></div>
         </li>
 
-        <li class="samples_container palette2 no-bg">
+        <li class="samples_container palette2 no-bg" id="second_palette">
             <label for="palette2"></label>
-            <input checked="true" id="palette2" name="palette" type="radio" class="input_palette js__palette2" value>
+            <input checked="" id="palette2" name="palette" type="radio" class="input_palette js__palette2" value="2">
             <div class="bg1 sample"></div>
             <div class="bg2 sample"></div>
             <div class="bg3 sample"></div>
         </li>
 
-        <li class="samples_container palette3 no-bg">
+        <li class="samples_container palette3 no-bg" id="third_palette">
             <label for="palette3"></label>
-            <input checked="true" id="palette3" name="palette" type="radio" class="input_palette js__palette3" value>
+            <input checked="" id="palette3" name="palette" type="radio" class="input_palette js__palette3" value="3">
             <div class="bg1 sample"></div>
             <div class="bg2 sample"></div>
             <div class="bg3 sample"></div>
         </li>
-
+        <!-- 
         <li class="samples_container palette4 no-bg">
             <label for="palette4"></label>
-            <input checked="true" id="palette4" name="palette" type="radio" class="input_palette js__palette4" value>
+            <input checked="" id="palette4" name="palette" type="radio" class="input_palette js__palette4" value="4">
             <div class="bg1 sample"></div>
             <div class="bg2 sample"></div>
             <div class="bg3 sample"></div>
-        </li>
+        </li> -->
     </ul>
 </div>
     </div>
@@ -165,19 +166,19 @@
     </i>crear tarjeta</a>
 </div>
 <div class="card-already-created hidden js_cardCreated">
-  <span class="card-created">La tarjeta ha sido creada</span>
-  <a class="created-response" href="#">https://awesome-profile-card.com?id=A456DF0001</a>
+  <span class="card-created js__shareResponse">La tarjeta ha sido creada</span>
+  <a class="created-response js__createdResponse" href="#"></a>
   <div class="js__twitterButton customTwitterButton" id="customTwitterButton">Compartir en Twitter</div>
 </div>
     </div>
   </fieldset>
 </form>
-  </main>
-  <footer>
+    </main>
     <footer>
+      <footer>
   <small class="footer">
     <div class="footer__text">
-      Awesome profile-cards &copy;2023
+      EcoSpringfield Coders - Awesome profile-cards &copy;2024
     </div>
     <div class="footer__logo">
       <a href="https://adalab.es"><img class="footer__logo__image" src="../images/logo-adalab.png" alt="Logo Adalab"></a>
@@ -185,8 +186,9 @@
   </small>
 </footer>
 
-  </footer>
-  
-  <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
-</body>
-</html>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+  </body>
+
+  </html>
