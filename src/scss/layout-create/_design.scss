@@ -1,4 +1,4 @@
-.design_text{
+.design__text {
     font-size: 1.4rem;
     font-family: $open_font;
     text-transform: uppercase;
@@ -11,120 +11,143 @@
     letter-spacing: normal;
     color: $gunmetal;
     margin: 12px 0 12px 0;
-  }
+}
 
 
 .palette1 {
     background-image: linear-gradient(to bottom, $hospital-green, lighten($hospital-green, 10%));
-    .create-profile-card-button{
-        .text-reset {
+
+    .create__profile__card {
+        &__button {
             color: $dark-green-blue;
         }
-        .reset-icon{
-            color: $dark-green-blue;
-        }
-    } 
-    .create-profile-card-content{
-        .img-card{        
-            border-left: solid 0.5rem $dark-green-blue;
-        } 
-        .img-card-title{
-            color: $dark-green-blue;
-        } 
-        .img-card-subtitle{
-            color: $dark-green-blue;
-        }
-        [class*="card-list-icons-contact"] {
-            border: solid 0.2rem $hospital-green;
-            [class*="-icon"]{
-                color: $dark-green-blue;
+
+        &__content {
+            .img__card {
+                border-left: solid 0.5rem $dark-green-blue;
+
+                &__title {
+                    color: $dark-green-blue;
+                }
+
+                &__subtitle {
+                    color: $dark-green-blue;
+                }
+            }
+
+
+            [class*="card__list__icons__contact"] {
+                border: solid 0.2rem $hospital-green;
+
+                [class*="__icon"] {
+                    color: $dark-green-blue;
+                }
             }
         }
-    }    
+    }
 
-    .bg1{
+
+    .bg1 {
         background-color: $dark-green-blue;
     }
-    .bg2{
+
+    .bg2 {
         background-color: $hospital-green;
     }
-    .bg3{
-        background-color:$dirty-blue ;
+
+    .bg3 {
+        background-color: $dirty-blue ;
     }
 }
 
-.palette2{
+.palette2 {
     background-image: linear-gradient(to bottom, $tomato, lighten($tomato, 10%));
-    .create-profile-card-button{
-        .text-reset {
+
+    .create__profile__card {
+        &__button {
             color: $dried-blood;
         }
-        .reset-icon{
-            color: $dried-blood;
-        }
-    } 
-    .create-profile-card-content{
-        .img-card{        
-            border-left: solid 0.5rem $dried-blood;
-        } 
-        .img-card-title{
-            color: $dried-blood;
-        } 
-        .img-card-subtitle{
-            color: $dried-blood;
-        }
-        [class*="card-list-icons-contact"] {
-            border: solid 0.2rem $tomato;
-            [class*="-icon"]{
-                color: $dried-blood;
+
+        &__content {
+            .img {
+                &__card {
+                    border-left: solid 0.5rem $dried-blood;
+
+                    &__title {
+                        color: $dried-blood;
+                    }
+
+                    &__subtitle {
+                        color: $dried-blood;
+                    }
+                }
+
+            }
+
+            [class*="card__list__icons__contact"] {
+                border: solid 0.2rem $tomato;
+
+                [class*="__icon"] {
+                    color: $dried-blood;
+                }
             }
         }
-    }    
-    .bg1{
+    }
+
+    .bg1 {
         background-color: $dried-blood;
     }
-    .bg2{
+
+    .bg2 {
         background-color: $tomato;
     }
-    .bg3{
-        background-color:$rusty-red;
+
+    .bg3 {
+        background-color: $rusty-red;
     }
 }
 
-.palette3{
+.palette3 {
     background-image: linear-gradient(to bottom, $light-grey-blue, lighten($light-grey-blue, 10%));
-    .create-profile-card-button{
-        .text-reset {
+
+
+    .create__profile__card {
+        &__button {
             color: $slate;
         }
-        .reset-icon{
-            color: $slate;
-        }
-    } 
-    .create-profile-card-content{
-        .img-card{        
-            border-left: solid 0.5rem $slate;
-        } 
-        .img-card-title{
-            color: $slate;
-        } 
-        .img-card-subtitle{
-            color: $slate;
-        }
-        [class*="card-list-icons-contact"] {
-            border: solid 0.2rem $light-grey-blue;
-            [class*="-icon"]{
-                color: $slate;
+
+        &__content {
+            .img__card {
+                border-left: solid 0.5rem $slate;
+
+                &__title {
+                    color: $slate;
+                }
+
+                &__subtitle {
+                    color: $slate;
+                }
+            }
+
+            [class*="card__list__icons__contact"] {
+                border: solid 0.2rem $light-grey-blue;
+
+                [class*="__icon"] {
+                    color: $slate;
+                }
             }
         }
-    }    
-    .bg1{
+    }
+
+    .bg1 {
         background-color: $slate;
     }
-    .bg2{
+
+    .bg2 {
         background-color: $light-grey-blue;
     }
-    .bg3{
+
+    .bg3 {
         background-color: $faded-orange;
     }
 }
@@ -156,7 +179,7 @@
 //             }
 //         }
 //     }
-    
+
 //     .bg1{
 //         background-color: $strawberry;
 //     }
@@ -168,25 +191,25 @@
 //     }
 // }
 
-.sample{
+.sample {
     width: 30px;
     height: 25px;
 }
 
-.design_palette{
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- 
+.design__palette {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
-.samples_container{
+.samples__container {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.palettes_container{
+.palettes__container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -194,13 +217,13 @@
     margin: 20px 0 20px 20px;
 }
 
-.input_palette{
+.input__palette {
     width: 17px;
     height: 17px;
     margin: 15px 10px 15px 28px;
 }
 
-.no-bg{
+.no__bg {
     background-image: none;
     background-color: transparent;
 }

@@ -7,14 +7,24 @@ $principal_font: $open_font;
 $title_font: $merry_font;
 $card_font: $montse_font;
 // font-sizes
-$footer_font_size: 1.4rem;
+$xbig_font_size: 2.4rem;
+$big_font_size: 1.8rem;
+$main_font_size: 1.4rem;
+$small_font_size: 1.2rem;
+$bold_font_weight: 600;
 $capital: uppercase;
 
 // line-heights
 
 // spaces (margins, paddings)
 $radius: 1.5rem;
-$main_margin: 1.8rem;
+$xbig_margin: 4rem;
+$big_margin: 2rem;
+$main_margin: 1.6rem;
+$small_margin: .8rem;
+$big_gap: 1.2rem;
+$main_gap: 1rem;
+$small_gap: .8rem;
 
 // colors
 $black_20: rgba(0, 0, 0, 0.2);

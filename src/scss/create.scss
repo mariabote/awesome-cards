@@ -1,5 +1,6 @@
 @import "core/reset";
 @import "core/variables";
+@import "core/style";
 @import "core/mixins";
 @import "components/buttons";
 @import "components/code";
@@ -16,13 +17,20 @@
 @import "pages/media-profile";
 @import "pages/media-desktop";
 
-.main-create-flex {
+.main__create__flex {
   background: linear-gradient(to bottom, $white_four, $white_two 9%);
 }
+
 .collapsed {
   display: none;
 }
 
-.rotate-icon {
+.rotate__icon {
   transform: rotate(180deg);
 }
+
+// :root {
+//   --color-1: $slate;
+//   --color-2: $light-grey-blue;
+//   --color-3: $faded-orange;
+// }

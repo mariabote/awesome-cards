@@ -2,7 +2,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: $main_margin;
-  width: 100vw;
   background-color: $white_two;
   border-top: solid 0.1rem $white_three;
   padding: $main_margin;
@@ -13,7 +12,7 @@ footer {
     margin: auto;
     opacity: 50%;
     font-family: $open_font;
-    font-size: $footer_font_size;
+    font-size: $main_font_size;
     text-align: center;
     color: $brownish_grey;
 

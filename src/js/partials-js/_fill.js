@@ -3,13 +3,13 @@
 //consts: 
 
     //-form:
-const fullname = document.querySelector('.js_name');
+const fullname = document.querySelector('.js__name');
 
     //-links: 
-const linkEmail = document.querySelector('.js__link_email');
-const linkPhone = document.querySelector('.js__link_phone');
-const linkLinkedin = document.querySelector('.js__link_linkedin');
-const linkGithub = document.querySelector('.js__link_github');
+const linkEmail = document.querySelector('.js__link__email');
+const linkPhone = document.querySelector('.js__link__phone');
+const linkLinkedin = document.querySelector('.js__link__linkedin');
+const linkGithub = document.querySelector('.js__link__github');
 
 // events
 

@@ -2,86 +2,84 @@
 
 //VARIABLES
 
-const containerFill = document.querySelector('.js__container_fill');
+const containerFill = document.querySelector('.js__container__fill');
 
 //FUNCIONES 
 function addDesign() {
-   containerDesign.classList.add ('collapsed');
-   arrowDesign.classList.add ('rotate-icon');
+   containerDesign.classList.add('display__none');
+   arrowDesign.classList.add('rotate__icon');
 };
-
 function removeDesign() {
-   containerDesign.classList.remove ('collapsed');
-   arrowDesign.classList.remove ('rotate-icon');
-};
-   function addFill () {
-      containerFill.classList.add ('collapsed');
-      arrowFill.classList.add ('rotate-icon');
+   containerDesign.classList.remove('display__none');
+   arrowDesign.classList.remove('rotate__icon');
 };
 
-   function removeFill () {
-      containerFill.classList.remove ('collapsed');
-      arrowFill.classList.remove ('rotate-icon');
+function addFill() {
+   containerFill.classList.add('display__none');
+   arrowFill.classList.add('rotate__icon');
+};
+function removeFill() {
+   containerFill.classList.remove('display__none');
+   arrowFill.classList.remove('rotate__icon');
 };
 
-   function addShare () {
-containerShare.classList.add ('collapsed');
-arrowShare.classList.add ('rotate-icon');
+function addShare() {
+   containerShare.classList.add('display__none');
+   arrowShare.classList.add('rotate__icon');
 };
-
 function removeShare() {
-   containerShare.classList.remove ('collapsed');
-arrowShare.classList.remove ('rotate-icon');
+   containerShare.classList.remove('display__none');
+   arrowShare.classList.remove('rotate__icon');
 }
 
-function designClick (event) {
-  addFill ();
-  addShare ();
-  removeDesign ();
-   };
+function designClick(event) {
+   addFill();
+   addShare();
+   removeDesign();
+};
 
-function fillClick (event) {
-   addDesign ();
-   addShare ();
-   removeFill ();
-   };
+function fillClick(event) {
+   addDesign();
+   addShare();
+   removeFill();
+};
 
-function shareClick (event) {
-      addDesign ();
-      addFill ();
-      removeShare ();
-    };
+function shareClick(event) {
+   addDesign();
+   addFill();
+   removeShare();
+};
 
 
 //EVENTOS
-document.addEventListener('DOMContentLoaded' , (event) => {
-   addFill ();
-   addShare ();
+document.addEventListener('DOMContentLoaded', (event) => {
+   addFill();
+   addShare();
    const storedName = localStorage.getItem('name');
    if (storedName) {
-     fullname.value = storedName;
-     cardTitle.innerHTML = storedName;
+      fullname.value = storedName;
+      cardTitle.innerHTML = storedName;
    }
    const storedJob = localStorage.getItem('job');
    if (storedJob) {
-     work.value = storedJob;
-     work.innerHTML = storedJob;
+      work.value = storedJob;
+      work.innerHTML = storedJob;
    }
    const storedEmail = localStorage.getItem('email');
    if (storedEmail) {
-     email.value = storedEmail;
+      email.value = storedEmail;
    }
    const storedLinkedIn = localStorage.getItem('linkedIn');
    if (storedLinkedIn) {
-     linkedin.value = storedLinkedIn;
+      linkedin.value = storedLinkedIn;
    }
    const storedGithub = localStorage.getItem('github');
    if (storedGithub) {
-     github.value = storedGithub;
+      github.value = storedGithub;
    }
    const storedPhone = localStorage.getItem('phone');
    if (storedPhone) {
-     tel.value = storedPhone;
+      tel.value = storedPhone;
    }
 });
 

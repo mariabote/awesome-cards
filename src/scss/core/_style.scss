@@ -1,0 +1,32 @@
+body {
+  background-color: $white_four;
+  font-size: $main_font_size;
+}
+
+
+h1 {
+  font-size: $xbig_font_size;
+  color: $color_main;
+  font-weight: $bold_font_weight;
+  font-family: $merry_font;
+}
+
+h2 {
+  text-transform: uppercase;
+  height: 2.4rem;
+  margin-left: 1rem;
+  color: $gunmetal;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: $gunmetal;
+}
+
+h3 {
+  font-size: $big_font_size;
+  font-size: $big_font_size;
+  font-weight: $bold_font_weight;
+}
+
+.display__none {
+    display: none !important;
+}

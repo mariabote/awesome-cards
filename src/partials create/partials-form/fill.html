@@ -1,39 +1,35 @@
-<div class="container js__container_fill">
-    <label class="container__label" for="Nombre-Completo">Nombre Completo
-        <input class="container__label__input js_name" id="Nombre-Completo" name="Nombre Completo" type="text"
-            placeholder="Ej: Sally Jill" autocomplete="cc-name" required>
+<div class="fill__container js__container__fill">
+    <label for="full_name">Full Name
+        <input class="js__name" id="full_name" name="Full Name" type="text" placeholder="Sally Jill"
+            autocomplete="cc-name" required>
     </label>
-    <label class="container__label" for="Puesto">Puesto
-        <input class="container__label__input js_work" id="Puesto" name="Puesto" type="text"
-            placeholder="Ej: Front-end unicorn" autocomplete="work" required>
+    <label for="position">Position
+        <input class="container__label__input js__work" id="position" name="Position" type="text"
+            placeholder="Front-end unicorn" autocomplete="work" required>
     </label>
-    <label class="container__label" for="imagen">Imagen de perfil
-        <div class="container__label__image">
-            <button class="container__label__image__button">
-                <label class="container__label__image__button__label" for="photo">Añadir imagen
-                    <input class="container__label__image__button__file js__profile-upload-btn" id="photo" name="photo" type="file" accept="image/*" required>
-                </label>
+    <label for="image">Image
+        <div class="image">
+            <button class="small orange">
+                <label for="image">Select image</label>
+                <input class="display__none js__profile__upload__btn" id="image" name="image" type="file"
+                    accept="image/*" required>
             </button>
-            <span class="container__label__image__box">
-                <input class="container__label__image__box__preview js__profile-image">
-            </span>
+            <input class="display__none js__profile__image">
         </div>
     </label>
-    <label class="container__label" for="Email">Email
-        <input class="container__label__input js_email" id="Email" name="Email" type="Email"
-            placeholder="Ej: sally-hill@gmail.com" autocomplete="email"
+    <label for="email">Email
+        <input class="js__email" id="email" name="Email" type="Email" placeholder="sally-hill@gmail.com"
+            autocomplete="email" required>
+    </label>
+    <label for="telephone">Telephone
+        <input class="js__tel" id="telephone" name="telephone" type="tel" placeholder="555-55-55-55" autocomplete="tel"
             required>
     </label>
-    <label class="container__label" for="telephone">Teléfono
-        <input class="container__label__input js_tel" id="telephone" name="telephone" type="tel" placeholder="Ej: 555-55-55-55"
-            autocomplete="tel" required>
-    </label>
-    <label class="container__label" for="linkedin">Linkedin
-        <input class="container__label__input js_linkedin" id="linkedin" name="linkedin" type=text
-            placeholder="Ej: linkedin.com/in/sally.hill" required>
-    </label>
-    <label class="container__label " for="github">Github
-        <input class="container__label__input js_github" id="github" name="github" type="text" placeholder="Ej: @sally-hill"
+    <label for="linkedin">Linkedin
+        <input class="js__linkedin" id="linkedin" name="linkedin" type=text placeholder="linkedin.com/in/sally.hill"
             required>
+    </label>
+    <label for="github">Github
+        <input class="js__github" id="github" name="github" type="text" placeholder="@sally-hill" required>
     </label>
 </div>

@@ -1,54 +1,32 @@
-.form {
-  width: 90vw;
+.create__form {
   display: flex;
   flex-direction: column;
-  margin: 1.7rem 2rem 3rem;
-  .fieldset-design {
-    @include fieldset;
-    .legend-design {
-      @include legend_grid;
-      .icon-design {
-        @include fieldset_icons;
-      }
-      .title-design {
-        @include legend_title;
-      }
-      .arrow-icon-design {
-        @include arrow_icon;
-      }
-    }
-  }
-}
+  // margin: $main_margin;
+  padding: $xbig_margin;
 
-.fieldset-fill {
-  @include fieldset;
-  .legend-fill {
-    @include legend_grid;
-    .icon-fill {
-      @include fieldset_icons;
-    }
-    .title-fill {
-      @include legend_title;
-    }
-    .arrow-icon-fill {
-      @include arrow_icon;
-    }
-  }
-}
-.fieldset-share {
-  border: 0.1px solid transparent;
-  height: 30rem;
-  margin-top: 1rem;
-  .legend-share {
-    @include legend_grid;
-    .icon-share {
-      @include fieldset_icons;
-    }
-    .title-share {
-      @include legend_title;
-    }
-    .arrow-icon-share {
-      @include arrow_icon;
+  &>fieldset {
+    border: none;
+    border-bottom: 0.1rem solid $white_three;
+    // margin-top: 1rem;
+
+    &>legend {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      cursor: pointer;
+
+      &>i {
+        width: 2.1rem;
+        height: 1.8rem;
+        font-size: 1.8rem;
+        color: $dull_orange;
+      }
+
+      &>i:last-of-type {
+        font-size: 1.8rem;
+        color: $gunmetal;
+      }
     }
   }
 }

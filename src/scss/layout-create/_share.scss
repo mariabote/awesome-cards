@@ -1,57 +1,33 @@
-.card-container {
-  border-bottom: solid #d8d8d8 1px;
-  width: 28rem;
-  margin-left: 1.5rem;
-  .create-card {
-    @include create-card();
-  }
-  .clicked {
-  background-color: #d5d5d5;
-  }
-}
-.card-already-created {
+.card__container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
-  margin: 2rem 0 0rem 1.5rem;
-  padding-bottom: 3rem;
-  width: 28rem;
+  margin: $main_margin;
+  gap: $main_gap;
 }
+
+.card__already__created {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $main_gap;
+}
+
 .hidden {
   display: none;
 }
-.card-created {
+
+.card__created {
   font-size: 1.8rem;
   font-weight: 600;
   color: $gunmetal;
   text-align: center;
 }
-.created-response {
+
+.created__response {
   font-size: 1.2rem;
   color: $dull_orange;
   text-align: center;
   font-weight: 600;
-  width: 29.2rem;
 }
-.customTwitterButton {
-  font-family: 'Poppins', sans-serif;
-  width: 18.1rem;
-  height: 3rem;
-  font-size: 1.4rem;
-  color: #fff;
-  text-transform: capitalize;
-  background-color: $azure;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  border-radius: 10px;
-  box-shadow: 1px 1px 6px 1px rgb(18 18 18 / 32%);
-  z-index: 5;
-} 
-.customTwitterButton:hover {
-  cursor: pointer;
-}
-

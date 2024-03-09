@@ -1,5 +1,6 @@
 @import "core/variables";
 @import "core/reset";
+@import "core/style";
 @import "components/buttons";
 @import "components/code";
 @import "components/links";
@@ -13,24 +14,4 @@
 html,
 body {
   height: 100%;
-}
-
-body {
-  background-color: $white_four;
-  font-size: 1.4rem;
-}
-
-h1,
-h2 {
-  color: $color_main;
-  font-family: $merry_font;
-  font-weight: 900;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 1.92rem;
 }

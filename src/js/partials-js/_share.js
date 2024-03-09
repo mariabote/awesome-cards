@@ -17,26 +17,28 @@ function handleClickCreate() {
   data.linkedin = linkedin.value;
   data.github = github.value.replace('@', '');
 
- fetch('https://dev.adalab.es/api/card/',
- {method: 'POST',
-  headers: {'Content-Type': 'application/json'},
-  body: JSON.stringify(data)})
-  .then (response => response.json())
-  .then (dataResponse => {
-    
-    shareUrl = dataResponse.cardURL;
-    
-    console.log(dataResponse);   
-    if (dataResponse.success) {
-      shareResponse.innerHTML = 'La tarjeta ha sido creada';
-      createdResponse.innerHTML = shareUrl;
-    }
-    else {
-      //Mensajito error
-      shareResponse.innerHTML = 'Debes completar la información para obtener tu tarjeta';
-      createdResponse.innerHTML = shareUrl='';
-    }
-  });  
+  fetch('https://dev.adalab.es/api/card/',
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(dataResponse => {
+
+      shareUrl = dataResponse.cardURL;
+
+      console.log(dataResponse);
+      if (dataResponse.success) {
+        shareResponse.innerHTML = 'Card has been created';
+        createdResponse.innerHTML = shareUrl;
+      }
+      else {
+        //Mensajito error
+        shareResponse.innerHTML = 'Complete all information to get your card';
+        createdResponse.innerHTML = shareUrl = '';
+      }
+    });
 }
 
 //  EVENTOS
@@ -45,14 +47,14 @@ createButton.addEventListener('click', (event) => {
   createButton.classList.toggle('clicked');
   toggleCardCreated();
   handleClickCreate();
-}); 
+});
 
 
 twitterButton.addEventListener('click', (event) => {
-handleClickCreate();
+  handleClickCreate();
   // URL y texto a compartir en Twitter
   shareUrl;
-  const shareText = '¡He creado mi nueva tarjeta profesional con Awesome Profile Cards!';
+  const shareText = "¡I've created my proffesional card with Awesome Profile Cards!";
 
   // Construir el enlace de Twitter con los parámetros necesarios
   const twitterLink = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareText)}`;

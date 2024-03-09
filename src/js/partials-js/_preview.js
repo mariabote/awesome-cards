@@ -4,9 +4,9 @@
 
 const restoreCard = () => { 
 
-completForm.reset ();
-cardTitle.innerHTML = 'Nombre Apellido';
-cardSubtitle.innerHTML = 'Front-end developer';
+completeForm.reset ();
+cardTitle.innerHTML = 'Name';
+cardSubtitle.innerHTML = 'Front-end unicorn';
 cardImage.classList.add('img-card-image');
 cardImage.style.backgroundImage = 'url(../images/card-rata-gafas.jpg)';
 iconPhone.href = '';

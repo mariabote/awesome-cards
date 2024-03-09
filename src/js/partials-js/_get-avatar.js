@@ -1,9 +1,9 @@
 'use strict';
 
 const fr = new FileReader();
-const fileField = document.querySelector('.js__profile-upload-btn');
-const profileImage = document.querySelector('.js__profile-image');
-const profilePreview = document.querySelector('.js__profile-preview');
+const fileField = document.querySelector('.js__profile__upload__btn');
+const profileImage = document.querySelector('.js__profile__image');
+const profilePreview = document.querySelector('.js__profile__preview');
 
 /**
  * Recoge el archivo añadido al campo de tipo "file"
