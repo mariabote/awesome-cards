@@ -1,0 +1,28 @@
+@import "core/reset";
+@import "core/variables";
+@import "core/mixins";
+@import "components/buttons";
+@import "components/code";
+@import "components/links";
+@import "layout/page";
+@import "layout-create/header-create";
+@import "layout-create/create-profile";
+@import "layout-create/form";
+@import "layout-create/share";
+@import "layout-create/fill";
+@import "layout-create/design";
+@import "layout/footer";
+@import "pages/index";
+@import "pages/media-profile";
+@import "pages/media-desktop";
+
+.main-create-flex {
+  background: linear-gradient(to bottom, $white_four, $white_two 9%);
+}
+.collapsed {
+  display: none;
+}
+
+.rotate-icon {
+  transform: rotate(180deg);
+}

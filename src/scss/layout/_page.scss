@@ -1,3 +1,6 @@
 .page {
     background-color: $white_four;
+    min-height: 100%;
+    display: grid;
+    align-content: space-between;
 }

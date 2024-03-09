@@ -8,36 +8,38 @@
   }
 }
 
+// SHARE SECTION
 
-
- // SHARE SECTION
- 
 @media (min-width: 1024px) {
   .card-container {
-   display: flex;
-   justify-content: space-around;
-   border-bottom: solid #d8d8d8 1px;
-   padding: 0rem 2rem 5rem 0rem;
-   margin-left: 6rem;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid #d8d8d8 1px;
+    padding: 0rem 2rem 5rem 0rem;
+    margin-left: 6rem;
+
     .create-card {
-    margin-top: 5rem;
-  }
- }
- 
- .card-already-created {
-   display: flex;
-   flex-wrap: wrap;
-   padding: 1rem 0rem 0rem 4rem;
-   gap: 3rem;}
- .hidden {
-     display: none;
+      margin-top: 5rem;
     }
-   .card-created {
-     font-size: 2rem;
-   }
-   .created-response {
-     font-size: 1.5rem;
-     margin-right: 3rem;
-   }
   }
- 
+
+  .card-already-created {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0rem 0rem 4rem;
+    gap: 3rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .card-created {
+    font-size: 2rem;
+  }
+
+  .created-response {
+    font-size: 1.5rem;
+    margin-right: 3rem;
+  }
+}

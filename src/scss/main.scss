@@ -12,6 +12,11 @@
 @import "pages/index";
 @import "pages/media-tablet";
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: $white_four;
 }
