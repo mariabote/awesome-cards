@@ -5,9 +5,7 @@
 @import "components/links";
 @import "layout/page";
 @import "layout/header";
-@import "layout/mainbelen";
-@import "layout/mainvirginia";
-@import "layout/button-start";
+@import "layout/main";
 @import "layout/footer";
 @import "pages/index";
 @import "pages/media-tablet";
@@ -19,4 +17,20 @@ body {
 
 body {
   background-color: $white_four;
+  font-size: 1.4rem;
+}
+
+h1,
+h2 {
+  color: $color_main;
+  font-family: $merry_font;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.92rem;
 }

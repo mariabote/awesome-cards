@@ -1,0 +1,54 @@
+main.index {
+  justify-content: center;
+  display: flex;
+  gap: $main_margin;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__icons {
+  border: solid #e17334 1px;
+  display: flex;
+  flex-direction: row;
+  padding: $main_margin;
+  gap: $main_margin;
+  border-radius: $radius;
+
+  .design,
+  .fill,
+  .share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 7rem;
+  }
+
+  .design {
+    padding-left: 1rem;
+  }
+
+  .words {
+    color: #54585a;
+    text-align: center;
+  }
+
+  .design-svg,
+  .fill-svg,
+  .share-svg {
+    color: #e17334;
+    font-size: 2.24rem;
+  }
+}
+
+.main__button {
+  width: 12.9rem;
+  height: 4.2rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 2.1rem;
+  background-color: $dirty_blue;
+  color: $white_two;
+  text-transform: $capital;
+  text-align: center;
+}

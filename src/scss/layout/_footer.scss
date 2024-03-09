@@ -1,11 +1,11 @@
 footer {
   display: flex;
   flex-direction: column;
-  gap: $footer_margin;
+  gap: $main_margin;
   width: 100vw;
   background-color: $white_two;
   border-top: solid 0.1rem $white_three;
-  padding: $footer_margin;
+  padding: $main_margin;
 }
 
 .footer {

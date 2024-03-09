@@ -7,10 +7,14 @@ $principal_font: $open_font;
 $title_font: $merry_font;
 $card_font: $montse_font;
 // font-sizes
+$footer_font_size: 1.4rem;
 $capital: uppercase;
+
 // line-heights
 
 // spaces (margins, paddings)
+$radius: 1.5rem;
+$main_margin: 1.8rem;
 
 // colors
 $black_20: rgba(0, 0, 0, 0.2);
@@ -40,5 +44,4 @@ $strawberry: #ff0541;
 $peach: #ff9d60;
 $dusty_pink: #ffc9d6;
 
-$footer_margin: 1.8rem;
-$footer_font_size: 1.4rem;
+$color_main: $dull_orange;
