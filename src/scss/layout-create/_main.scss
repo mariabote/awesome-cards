@@ -1,0 +1,23 @@
+.main__create__flex {
+    background: linear-gradient(to bottom, $white_four, $white_two 9%);
+    transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    .main__create__flex {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 30% auto;
+
+        .create__profile {
+            order: 2;
+            margin: $xbig_margin;
+            border-radius: 0.6rem;
+
+            .create__profile__card {
+                height: 60vh;
+                justify-content: center;
+            }
+        }
+    }
+}

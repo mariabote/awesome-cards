@@ -1,5 +1,5 @@
 .create__profile {
-  background-image: linear-gradient(to bottom, $silver, $pale-grey);
+  background-image: linear-gradient(to bottom, var(--color-b), var(--color-c));
   padding: $xbig_margin;
   display: flex;
   flex-direction: column;
@@ -10,21 +10,15 @@
     flex-direction: column;
     align-items: center;
 
-    &__button {
+    &>button {
       padding: 0.7rem 1rem;
       // @include transparent_button;
       display: flex;
       flex-direction: row;
       gap: 0.8rem;
-
-      >i {
-        font-size: 1.2rem;
-      }
-
-      >span {
-        text-transform: uppercase;
-        font-size: 1.2rem;
-      }
+      color: var(--color-a);
+      font-size: 1.2rem;
+      text-transform: uppercase;
     }
 
     &__content {
@@ -38,7 +32,7 @@
       .img__card {
         height: 4.2rem;
         margin: 2.1rem 0 1rem;
-        border-left: solid 0.5rem $dirty_blue;
+        border-left: solid 0.5rem var(--color-a);
 
         &__title {
           height: 2rem;
@@ -47,7 +41,7 @@
           font-size: 1.8rem;
           font-weight: bold;
           line-height: 1.11;
-          color: $dark_green_blue;
+          color: var(--color-a);
         }
 
         &__subtitle {
@@ -78,36 +72,19 @@
           display: flex;
           gap: 1rem;
 
-          &__contact1 {
-            @include list_icons;
-
-            .mobile__icon {
-              @include card_icons;
-            }
+          & li {
+            width: 3.2rem;
+            height: 3.2rem;
+            border-radius: 1.6rem;
+            border: solid 0.2rem var(--color-b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
 
-          &__contact2 {
-            @include list_icons;
-
-            .email__icon {
-              @include card_icons;
-            }
-          }
-
-          &__contact3 {
-            @include list_icons;
-
-            .in__icon {
-              @include card_icons;
-            }
-          }
-
-          &__contact4 {
-            @include list_icons;
-
-            .github__icon {
-              @include card_icons;
-            }
+          & i {
+            font-size: 1.8rem;
+            color: var(--color-a);
           }
         }
       }

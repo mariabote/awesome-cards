@@ -1,13 +1,3 @@
-@media (min-width: 1024px) {
-  .main-create-flex {
-    .create-profile {
-      width: 75vw;
-      margin-top: 2rem;
-      margin-left: 3rem;
-    }
-  }
-}
-
 // SHARE SECTION
 
 @media (min-width: 1024px) {
@@ -28,10 +18,6 @@
     flex-wrap: wrap;
     padding: 1rem 0rem 0rem 4rem;
     gap: 3rem;
-  }
-
-  .hidden {
-    display: none;
   }
 
   .card-created {

@@ -1,3 +1,5 @@
+@import "../core/variables";
+
 .design__text {
     font-size: 1.4rem;
     font-family: $open_font;
@@ -13,140 +15,40 @@
     margin: 12px 0 12px 0;
 }
 
-
-.palette1 {
-    background-image: linear-gradient(to bottom, $hospital-green, lighten($hospital-green, 10%));
-
-    .create__profile__card {
-        &>button {
-            color: $dark-green-blue;
-        }
-
-        &__content {
-            >.img__card {
-                border-left: solid 0.5rem $dark-green-blue;
-
-                &__title {
-                    color: $dark-green-blue;
-                }
-
-                &__subtitle {
-                    color: $dark-green-blue;
-                }
-            }
-
-
-            [class*="card__list__icons__contact"] {
-                border: solid 0.2rem $hospital-green;
-
-                [class*="__icon"] {
-                    color: $dark-green-blue;
-                }
-            }
-        }
-    }
-
-
-    .bg1 {
-        background-color: $dark-green-blue;
-    }
-
-    .bg2 {
-        background-color: $hospital-green;
-    }
-
-    .bg3 {
-        background-color: $dirty-blue ;
-    }
+.bg1a {
+    background-color: var(--color-1a);
 }
 
-.palette2 {
-    background-image: linear-gradient(to bottom, $tomato, lighten($tomato, 10%));
-
-    .create__profile__card {
-        &>button {
-            color: $dried-blood;
-        }
-
-        &__content {
-            >.img__card {
-                border-left: solid 0.5rem $dried-blood;
-
-                &__title {
-                    color: $dried-blood;
-                }
-
-                &__subtitle {
-                    color: $dried-blood;
-                }
-            }
-
-            [class*="card__list__icons__contact"] {
-                border: solid 0.2rem $tomato;
-
-                [class*="__icon"] {
-                    color: $dried-blood;
-                }
-            }
-        }
-    }
-
-    .bg1 {
-        background-color: $dried-blood;
-    }
-
-    .bg2 {
-        background-color: $tomato;
-    }
-
-    .bg3 {
-        background-color: $rusty-red;
-    }
+.bg1b {
+    background-color: var(--color-1b);
 }
 
-.palette3 {
-    background-image: linear-gradient(to bottom, $light-grey-blue, lighten($light-grey-blue, 10%));
+.bg1c {
+    background-color: var(--color-1c);
+}
 
+.bg2a {
+    background-color: var(--color-2a);
+}
 
-    .create__profile__card {
-        &>button {
-            color: $slate;
-        }
+.bg2b {
+    background-color: var(--color-2b);
+}
 
-        &__content {
-            >.img__card {
-                border-left: solid 0.5rem $slate;
+.bg2c {
+    background-color: var(--color-2c);
+}
 
-                &__title {
-                    color: $slate;
-                }
+.bg3a {
+    background-color: var(--color-3a);
+}
 
-                &__subtitle {
-                    color: $slate;
-                }
-            }
+.bg3b {
+    background-color: var(--color-3b);
+}
 
-            [class*="card__list__icons__contact"] {
-                border: solid 0.2rem $light-grey-blue;
-
-                [class*="__icon"] {
-                    color: $slate;
-                }
-            }
-        }
-    }
-
-    .bg1 {
-        background-color: $slate;
-    }
-
-    .bg2 {
-        background-color: $light-grey-blue;
-    }
-
-    .bg3 {
-        background-color: $faded-orange;
-    }
+.bg3c {
+    background-color: var(--color-3c);
 }
 
 .sample {

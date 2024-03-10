@@ -50,7 +50,7 @@ twitterButton.addEventListener('click', (event) => {
   handleClickCreate();
   // URL y texto a compartir en Twitter
   shareUrl;
-  const shareText = "¡I've created my proffesional card with Awesome Profile Cards!";
+  const shareText = "¡I've created my professional card with Awesome Profile Cards!";
 
   // Construir el enlace de Twitter con los parámetros necesarios
   const twitterLink = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareText)}`;
