@@ -8,15 +8,10 @@ let dataResponse;
 
 //  FUNCIONES
 function toggleCardCreated() {
-  cardCreated.classList.toggle('hidden');
+  cardCreated.classList.toggle('display__none');
 }
 
 function handleClickCreate() {
-  data.email = email.value;
-  data.phone = tel.value;
-  data.linkedin = linkedin.value;
-  data.github = github.value.replace('@', '');
-
   fetch('https://dev.adalab.es/api/card/',
     {
       method: 'POST',
@@ -26,6 +21,7 @@ function handleClickCreate() {
     .then(response => response.json())
     .then(dataResponse => {
 
+      console.log(data);
       shareUrl = dataResponse.cardURL;
 
       console.log(dataResponse);

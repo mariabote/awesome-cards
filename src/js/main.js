@@ -1,20 +1,6 @@
 'use strict';
 
-console.log('>> Ready :)');
-
-
-
-const data ={
-    palette: '', 
-    name: '',
-    job: '',
-    photo: '',
-    phone: '', 
-    email: '',
-    linkedin: '', 
-    github:'', 
-}
-
+import './partials-js/_data.js';
 import './partials-js/_variables.js';
 import './partials-js/_collapsables.js';
 import './partials-js/_design.js';

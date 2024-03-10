@@ -1,20 +1,17 @@
 'use strict';
 
-// QUERY-SELECTOR
-
 const inputPalette = document.querySelectorAll('input[name="palette"]');
 const createProfile = document.querySelector('.create__profile');
 
-// VARIABLES DE DATOS GLOBALES
-
-// FUNCIONES
-
-// EVENTOS
 for (let i = 0; i < inputPalette.length; i++) {
   inputPalette[i].addEventListener('click', () => {
-    createProfile.className = `create__profile ${inputPalette[i].id}`;
-    data.palette = inputPalette[i].value;
+    setPalette(inputPalette[i].value);
+    saveData();
   })
 }
 
-// CÓDIGO CUANDO CARGA LA PÁGINA.
+function setPalette(value) {
+  document.getElementById(`palette${value}`).checked = true;
+  createProfile.className = `create__profile palette${value}`;
+  data.palette = value
+}

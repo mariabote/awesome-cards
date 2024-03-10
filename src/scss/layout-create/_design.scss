@@ -18,12 +18,12 @@
     background-image: linear-gradient(to bottom, $hospital-green, lighten($hospital-green, 10%));
 
     .create__profile__card {
-        &__button {
+        &>button {
             color: $dark-green-blue;
         }
 
         &__content {
-            .img__card {
+            >.img__card {
                 border-left: solid 0.5rem $dark-green-blue;
 
                 &__title {
@@ -64,24 +64,21 @@
     background-image: linear-gradient(to bottom, $tomato, lighten($tomato, 10%));
 
     .create__profile__card {
-        &__button {
+        &>button {
             color: $dried-blood;
         }
 
         &__content {
-            .img {
-                &__card {
-                    border-left: solid 0.5rem $dried-blood;
+            >.img__card {
+                border-left: solid 0.5rem $dried-blood;
 
-                    &__title {
-                        color: $dried-blood;
-                    }
-
-                    &__subtitle {
-                        color: $dried-blood;
-                    }
+                &__title {
+                    color: $dried-blood;
                 }
 
+                &__subtitle {
+                    color: $dried-blood;
+                }
             }
 
             [class*="card__list__icons__contact"] {
@@ -112,12 +109,12 @@
 
 
     .create__profile__card {
-        &__button {
+        &>button {
             color: $slate;
         }
 
         &__content {
-            .img__card {
+            >.img__card {
                 border-left: solid 0.5rem $slate;
 
                 &__title {
@@ -151,45 +148,6 @@
         background-color: $faded-orange;
     }
 }
-
-// .palette4{
-//     background-image: linear-gradient(to bottom, $dusty_pink, lighten($dusty_pink, 10%));
-//     .create-profile-card-button{
-//         .text-reset {
-//             color: $strawberry;
-//         }
-//         .reset-icon{
-//             color: $strawberry;
-//         }
-//     } 
-//     .create-profile-card-content{
-//         .img-card{        
-//             border-left: solid 0.5rem $strawberry;
-//         } 
-//         .img-card-title{
-//             color: $strawberry;
-//         } 
-//         .img-card-subtitle{
-//             color: $peach;
-//         }
-//         [class*="card-list-icons-contact"] {
-//             border: solid 0.2rem $dusty_pink;
-//             [class*="-icon"]{
-//                 color: $strawberry;
-//             }
-//         }
-//     }
-
-//     .bg1{
-//         background-color: $strawberry;
-//     }
-//     .bg2{
-//         background-color: $peach;
-//     }
-//     .bg3{
-//         background-color: $dusty_pink;
-//     }
-// }
 
 .sample {
     width: 30px;

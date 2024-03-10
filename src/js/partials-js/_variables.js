@@ -14,11 +14,11 @@ const legendShare = document.querySelector('.js__legend__share');
 const arrowShare = document.querySelector('.js__arrow__icon__share');
 
 //////////////////////////////////////
-const nombrecompleto = document.querySelector('.js__name');
-const work = document.querySelector('.js__work');
+const fullname = document.querySelector('.js__name');
+const position = document.querySelector('.js__work');
 const image = document.querySelector('.js__image');
 const email = document.querySelector('.js__email');
-const tel = document.querySelector('.js__tel');
+const phone = document.querySelector('.js__tel');
 const linkedin = document.querySelector('.js__linkedin');
 const github = document.querySelector('.js__github');
 ////////////////////////////////////
