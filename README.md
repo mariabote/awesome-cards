@@ -1,2 +1,2 @@
-# pw-project-promo-A-module-2-team-4
-Awesome profile-cards  pw-project-promo-A-module-2-team-4
+Create your own business card.
+With this web application you can create your own personalized business card. Once created you can share it on your social networks.
